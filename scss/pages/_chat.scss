@@ -1,0 +1,96 @@
+.message-box {
+    position: relative;
+    input {
+        border-radius: 14px;
+        padding: 12px 12px 12px 14px;
+        padding-right: 50px;
+        border: 1px solid var(--line);
+        color: var(--text-5);
+        background-color: var(--white);
+    }
+    .btn-message {
+        position: absolute;
+        right: 12px;
+        top: 12px;
+        svg path {
+            fill: var(--primary);
+        }
+    }
+}
+.bubble {
+    display: flex;
+    p {
+        padding: 14px;
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 140%;
+        color: $white;
+        border-radius: 14px 14px 0px 14px;
+        background-color: var(--primary);
+        margin-bottom: 6px;
+    }
+    .time {
+        color: var(--text-5);
+        font-size: 12px;
+        line-height: 120%;
+    }
+    &.bubble-you {
+        gap: 8px;
+        align-items: flex-end;
+        margin-bottom: 8px;
+        margin-right: 50px;
+        img {
+            width: 38px;
+            height: 38px;
+            border-radius: 50%;
+            margin-bottom: 24px;
+        }
+        p {
+            border-radius: 14px 14px 14px 0px;
+            color: var(--onSurface);
+            background-color: var(--text-gray);
+        }
+    }
+    &.bubble-me {
+        margin-bottom: 8px;
+        justify-content: flex-end;
+        margin-left: 80px;
+        .content {
+            .time {
+                text-align: end;
+                display: block;
+            }
+        }
+    }
+}
+
+.status-icon {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    &.online {
+        background-color: $primary;
+        border: 2px solid $white;
+    }
+    &.offline {
+        background-color: $critical;
+    }
+}
+
+.fixed-chat {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 16px 20px;
+    max-width: 1024px;
+    margin: 0 auto;
+    .inner {
+        display: flex;
+        gap: 20px;
+        justify-content: space-between;
+        .message-box {
+            flex-grow: 1;
+        }
+    }
+}

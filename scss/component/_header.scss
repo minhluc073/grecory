@@ -1,0 +1,155 @@
+.header {
+    @include flex(center, center);
+    gap: 20px;
+    padding: 10px 20px;
+    position: relative;
+    min-height: 60px;
+    .icon {
+        height: 40px;
+        width: 40px;
+        font-size: 20px;
+        border-radius: 12px;
+        border: 1px solid var(--line);
+        @include flex(center, center);
+    }
+
+    .left {
+        position: absolute;
+        left: 20px;
+        top: 10px;
+        .icon {
+            font-size: 14px;
+        }
+    }
+    .right {
+        position: absolute;
+        right: 20px;
+        top: 10px;
+        .icon {
+            font-size: 22px;
+            color: var(--text-4);
+        }
+    }
+    &.bg-surface {
+        .icon {
+            background-color: var(--white);
+        }
+    }
+    &.absolute {
+        position: absolute;
+        width: 100%;
+        top: 0;
+        left: 0;
+        right: 0;
+        max-width: 1024px;
+        margin: 0 auto;
+        background: transparent;
+        .left,
+        .right {
+            background: rgba(255, 255, 255, 0.2);
+            backdrop-filter: blur(2px);
+            border-radius: 12px;
+
+            .icon {
+                border-color: transparent;
+                color: $white;
+            }
+        }
+        h3 {
+            color: $white;
+        }
+    }
+}
+.header-style2 {
+    padding: 20px;
+    .inner {
+        @include flex(center, space-between);
+        gap: 10px;
+        .content {
+            flex-grow: 1;
+        }
+        .right {
+            width: 48px;
+            height: 48px;
+            @include flex(center,center);
+            border: 1px solid var(--line);
+            border-radius: 20px;
+            color: var(--text-4);
+            font-size: 22px;
+        }
+    }
+}
+.fixed-top {
+    position: fixed;
+    top: 0;
+    z-index: 1020;
+    max-width: 1024px;
+    margin: 0 auto;
+    // padding: 20px;
+    left: 0;
+    right: 0;
+}
+
+.header-search {
+    padding: 10px 20px 8px;
+
+    &.st2 {
+        .search-box {
+            .search-field {
+                padding: 8px 12px;
+                padding-right: 35px;
+            }
+            .search-field:valid ~ .icon-cancel {
+                @include flex(center, center);
+            }
+
+            .icon-cancel {
+                display: none;
+                position: absolute;
+                top: 9px;
+                right: 12px;
+                background-color: $secondary;
+                color: $white;
+                font-size: 10px;
+                width: 16px;
+                height: 16px;
+                border-radius: 100px;
+            }
+        }
+    }
+    
+}
+.header-setting {
+    padding: 10px 20px;
+    .header-content {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        .icon {
+            path {
+                fill: var(--primary);
+            }
+        }
+        .left {
+            display: flex;
+            gap: 10px;
+            .title {
+                flex-grow: 1;
+                font-weight: 700;
+                color: var(--primary);
+            }
+        }
+
+        .right {
+            display: flex;
+            align-items: center;
+            gap: 14px;
+        }
+    }
+}
+
+.header-map{
+    position: relative;
+    z-index: 10;
+    top: 80px;
+}
