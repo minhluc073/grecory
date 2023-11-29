@@ -231,17 +231,16 @@
     }
 
     &.icon {
-        border: 1px solid var(--line);
         color: var(--onSurface);
-        font-size: 14px;
-        font-weight: 700;
-        line-height: 140%;
+        font-weight: 600;
+        border: 1px solid $line;
+        padding: 13px;
         .img-icon {
-            width: 22px;
-            height: 22px;
+            width: 20px;
+            height: 20px;
         }
         .icon {
-            font-size: 22px;
+            font-size: 20px;
             &.icon-tw {
                 color: #03a9f4;
             }

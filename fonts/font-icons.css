@@ -512,43 +512,33 @@
 }
 .icon-btn:before {
   content: "\e96c";
-  color: #d3d5da;
 }
 .icon-avt:before {
   content: "\e96d";
-  color: #d3d5da;
 }
 .icon-badge:before {
   content: "\e96e";
-  color: #d3d5da;
 }
 .icon-bookmark2:before {
   content: "\e96f";
-  color: #fff;
 }
 .icon-bootmark:before {
   content: "\e970";
-  color: #d3d5da;
 }
 .icon-btn-group:before {
   content: "\e971";
-  color: #d3d5da;
 }
 .icon-alert:before {
   content: "\e972";
-  color: #d3d5da;
 }
 .icon-arr-right:before {
   content: "\e973";
-  color: #fff;
 }
 .icon-left-btn:before {
   content: "\e974";
-  color: #fff;
 }
 .icon-check:before {
   content: "\e976";
-  color: #2dc28d;
 }
 .icon-down1:before {
   content: "\e977";

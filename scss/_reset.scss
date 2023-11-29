@@ -296,6 +296,10 @@ h5 {
     font-size: $h5-fs;
     line-height: $h5-lh;
 }
+h6 {
+    font-size: $h5-fs;
+    line-height: $h5-lh;
+}
 
 h1,
 h2,
@@ -457,12 +461,11 @@ code {
     font-size: 12px;
     line-height: 16px;
 }
-p,
-.text-justify {
-    font-size: 14px;
-    font-weight: 500;
-    line-height: 19.6px;
-}
+// .text-justify {
+//     font-size: 14px;
+//     font-weight: 500;
+//     line-height: 19.6px;
+// }
 // text-size
 
 .text-md-start {
@@ -862,12 +865,12 @@ p,
     border-radius: 20px 20px 0px 0px;
 }
 .app-content {
-    padding: 60px 0px 90px;
+    padding: 48px 0px 90px;
     &.style-1 {
         padding-top: 0;
     }
     &.style-2 {
-        padding-bottom: 165px;
+        padding-bottom: 0px;
     }
     &.style-3 {
         padding-top: 80px;

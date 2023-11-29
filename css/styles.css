@@ -59,7 +59,7 @@
   --primary-bold: #5b2400;
   --primary-btn: #c96a28;
   --secondary: #787982;
-  --secondary2: #787982;
+  --secondary2: #B9BAC3;
   --success: #1e7f11;
   --success2: #54b24c;
   --danger: #e10000;
@@ -92,7 +92,7 @@
   --text-3: #343434;
   --text-4: #d3d5da;
   --text-5: #abadb2;
-  --line: #f2f2f2;
+  --line: #e5e5e5;
   --line-2: #d9d9d9;
   --line-3: #dbdbdb;
   --line-rgba: rgba(255, 255, 255, 0.1);
@@ -345,7 +345,7 @@ input::-moz-focus-inner {
 body {
   font-family: "Inter Tight", sans-serif;
   font-size: 16px;
-  line-height: 21%;
+  line-height: 21px;
   font-weight: 400;
   background-color: var(--white);
   color: var(--secondary);
@@ -406,6 +406,11 @@ h4 {
 }
 
 h5 {
+  font-size: 18px;
+  line-height: 22px;
+}
+
+h6 {
   font-size: 18px;
   line-height: 22px;
 }
@@ -565,13 +570,6 @@ code {
 .text-caption-2 {
   font-size: 12px;
   line-height: 16px;
-}
-
-p,
-.text-justify {
-  font-size: 14px;
-  font-weight: 500;
-  line-height: 19.6px;
 }
 
 .text-md-start {
@@ -1080,13 +1078,13 @@ p,
 }
 
 .app-content {
-  padding: 60px 0px 90px;
+  padding: 48px 0px 90px;
 }
 .app-content.style-1 {
   padding-top: 0;
 }
 .app-content.style-2 {
-  padding-bottom: 165px;
+  padding-bottom: 0px;
 }
 .app-content.style-3 {
   padding-top: 80px;
@@ -1378,19 +1376,15 @@ p,
 /*------------ header ---------------- */
 .header {
   display: flex;
-  align-items: center;
   justify-content: center;
-  gap: 20px;
-  padding: 10px 20px;
+  padding: 8px 20px 12px;
   position: relative;
-  min-height: 60px;
+  min-height: 48px;
 }
 .header .icon {
-  height: 40px;
-  width: 40px;
+  height: 24px;
+  width: 24px;
   font-size: 20px;
-  border-radius: 12px;
-  border: 1px solid var(--line);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -1398,15 +1392,16 @@ p,
 .header .left {
   position: absolute;
   left: 20px;
-  top: 10px;
+  top: 8px;
 }
 .header .left .icon {
   font-size: 14px;
+  color: var(--onSurface);
 }
 .header .right {
   position: absolute;
   right: 20px;
-  top: 10px;
+  top: 8px;
 }
 .header .right .icon {
   font-size: 22px;
@@ -1825,18 +1820,17 @@ p,
   border: 1px solid #e5e5e5;
 }
 .tf-btn.icon {
-  border: 1px solid var(--line);
   color: var(--onSurface);
-  font-size: 14px;
-  font-weight: 700;
-  line-height: 140%;
+  font-weight: 600;
+  border: 1px solid #e5e5e5;
+  padding: 13px;
 }
 .tf-btn.icon .img-icon {
-  width: 22px;
-  height: 22px;
+  width: 20px;
+  height: 20px;
 }
 .tf-btn.icon .icon {
-  font-size: 22px;
+  font-size: 20px;
 }
 .tf-btn.icon .icon.icon-tw {
   color: #03a9f4;
@@ -2529,26 +2523,23 @@ html:not([dir=rtl]) .noUi-horizontal .noUi-handle {
 
 .digit-group {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
+  gap: 12px;
 }
 .digit-group input {
-  width: 60px;
-  height: 60px;
-  border-radius: 20px;
-  font-size: 20px;
-  font-weight: 700;
-  line-height: 140%;
-  border-bottom: 1px solid transparent;
+  width: 58px;
+  height: 58px;
+  border-radius: 8px;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 36px;
+  color: var(--onSurface);
+  border: 1px solid var(--line);
   text-align: center;
-  background: var(--line);
-}
-.digit-group input:valid {
-  color: #fff;
-  background-color: var(--primary);
-  border-color: var(--primary);
+  background-color: var(--white);
 }
 .digit-group input:focus {
-  border-color: var(--primary);
+  border-color: var(--onSurface);
 }
 
 .search-box {
@@ -3199,6 +3190,14 @@ html:not([dir=rtl]) .noUi-horizontal .noUi-handle {
 }
 .tf-checkbox:checked::before {
   color: #e55223;
+}
+.tf-checkbox.sm {
+  width: 14px;
+  height: 14px;
+  border-radius: 3px;
+}
+.tf-checkbox.sm::before {
+  font-size: 6px;
 }
 
 /*------------ card ---------------- */
@@ -5204,13 +5203,11 @@ html:not([dir=rtl]) .noUi-horizontal .noUi-handle {
 }
 
 .auth-line {
-  font-size: 16px;
-  line-height: 22px;
   position: relative;
   display: flex;
   align-items: center;
   justify-content: center;
-  margin: 16px 0px;
+  margin: 32px 0px;
 }
 .auth-line::before {
   content: "";
@@ -5277,6 +5274,15 @@ html:not([dir=rtl]) .noUi-horizontal .noUi-handle {
 }
 .otp-area .box-image img {
   max-width: 244px;
+}
+
+.cb-signup {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.cb-signup label {
+  margin-bottom: 0;
 }
 
 /*--------- home ---------- */

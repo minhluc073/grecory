@@ -1,6 +1,6 @@
 //settings
 $font-main-size: 16px;
-$font-main-line: 21%;
+$font-main-line: 21px;
 $font-main-family: "Inter Tight", sans-serif;
 $fontIcon: "icomoon";
 
@@ -14,7 +14,8 @@ $h4-fs: 20px;
 $h4-lh: 25px;
 $h5-fs: 18px;
 $h5-lh: 22px;
-
+$h6-fs: 16px;
+$h6-lh: 21px;
 // color
 $primary: #e55223;
 $primarySub: #f8f2e2;
@@ -43,7 +44,7 @@ $rgba-dark: rgba(27, 50, 95, 0.1);
     --primary-bold: #5b2400;
     --primary-btn: #c96a28;
     --secondary: #787982;
-    --secondary2: #787982;
+    --secondary2: #B9BAC3;
     --success: #1e7f11;
     --success2: #54b24c;
     --danger: #e10000;
@@ -76,7 +77,7 @@ $rgba-dark: rgba(27, 50, 95, 0.1);
     --text-3: #343434;
     --text-4: #d3d5da;
     --text-5: #abadb2;
-    --line: #f2f2f2;
+    --line: #e5e5e5;
     --line-2: #d9d9d9;
     --line-3: #dbdbdb;
     --line-rgba: rgba(255, 255, 255, 0.1);

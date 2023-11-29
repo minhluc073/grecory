@@ -9,11 +9,9 @@
 }
 
 .auth-line {
-    font-size: 16px;
-    line-height: 22px;
     position: relative;
     @include flex(center, center);
-    margin: 16px 0px;
+    margin: 32px 0px;
     &::before {
         content: "";
         position: absolute;
@@ -80,5 +78,14 @@
         img {
             max-width: 244px;
         }
+    }
+}
+
+.cb-signup {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    label{
+        margin-bottom: 0;
     }
 }

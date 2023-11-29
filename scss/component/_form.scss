@@ -40,7 +40,6 @@
     }
 }
 
-
 .input-fill {
     .form-control {
         background: var(--bg-ip);
@@ -271,25 +270,23 @@
 
 .digit-group {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
+    gap: 12px;
 
     input {
-        width: 60px;
-        height: 60px;
-        border-radius: 20px;
-        font-size: 20px;
-        font-weight: 700;
-        line-height: 140%;
-        border-bottom: 1px solid transparent;
+        width: 58px;
+        height: 58px;
+        border-radius: 8px;
+        font-size: 24px;
+        font-weight: 600;
+        line-height: 36px;
+        color: var(--onSurface);
+        border: 1px solid var(--line);
         text-align: center;
-        background: var(--line);
-        &:valid {
-            color: $white;
-            background-color: var(--primary);
-            border-color: var(--primary);
-        }
+        background-color: var(--white);
+
         &:focus {
-            border-color: var(--primary);
+            border-color: var(--onSurface);
         }
     }
 }
