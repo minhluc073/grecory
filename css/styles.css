@@ -2619,7 +2619,7 @@ html:not([dir=rtl]) .noUi-horizontal .noUi-handle {
 }
 
 .menubar-footer {
-  padding: 17px 20px 18px;
+  padding: 15px 0px 8px;
 }
 .menubar-footer .inner-bar {
   padding-left: 0;
@@ -2635,28 +2635,24 @@ html:not([dir=rtl]) .noUi-horizontal .noUi-handle {
   width: 20%;
 }
 .menubar-footer .inner-bar li a {
-  color: var(--text);
+  color: var(--secondary);
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 8px;
-  font-size: 11px;
-  font-weight: 400;
-  line-height: normal;
+  gap: 4px;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 16px;
 }
 .menubar-footer .inner-bar li a .icon {
-  font-size: 24px;
-  color: var(--onSurface);
+  font-size: 20px;
+  color: var(--secondary);
 }
 .menubar-footer .inner-bar li.active a {
-  color: var(--primary-btn);
-  font-weight: 700;
+  color: var(--onSurface);
 }
 .menubar-footer .inner-bar li.active a .icon {
-  color: var(--primary-btn);
-}
-.menubar-footer .inner-bar li.active a svg path {
-  fill: var(--primary-btn);
+  color: var(--primary);
 }
 .menubar-footer .inner-bar .action-home {
   margin-top: -40px;

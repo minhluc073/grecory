@@ -16,7 +16,7 @@
     background: var(--white);
 }
 .menubar-footer {
-    padding: 17px 20px 18px;
+    padding: 15px 0px 8px;
 
     .inner-bar {
         padding-left: 0;
@@ -30,29 +30,26 @@
             padding: 0;
             width: 20%;
             a {
-                color: var(--text);
+                color: var(--secondary);
                 display: flex;
                 flex-direction: column;
                 align-items: center;
-                gap: 8px;
-                font-size: 11px;
-                font-weight: 400;
-                line-height: normal;
+                gap: 4px;
+                font-size: 12px;
+                font-weight: 500;
+                line-height: 16px;
                 .icon {
-                    font-size: 24px;
-                    color: var(--onSurface);
+                    font-size: 20px;
+                    color: var(--secondary);
                 }
             }
             &.active {
                 a {
-                    color: var(--primary-btn);
-                    font-weight: 700;
+                    color: var(--onSurface);
                     .icon {
-                        color: var(--primary-btn);
+                        color: var(--primary);
                     }
-                    svg path {
-                        fill: var(--primary-btn);
-                    }
+                    
                 }
             }
         }
