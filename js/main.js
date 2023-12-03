@@ -208,6 +208,29 @@
   /* active Suggestions
   ------------------------------------------------------------------------------------- */
   var activeSuggest = function () {
+    if ($("div").hasClass("language")) {
+      $(".item-check").on("click", function () {
+        $(this)
+          .parents(".language")
+          .find(".item-check.active")
+          .removeClass("active");
+        $(this).addClass("active");
+      });
+    }
+    if ($("div").hasClass("lockApp")) {
+      $(".item-check").on("click", function () {
+        $(this)
+          .parents(".lockApp")
+          .find(".item-check.active")
+          .removeClass("active");
+        $(this).addClass("active");
+      });
+    }
+
+
+
+
+
     $(".press-toggle").on("click", function () {
       $(this).toggleClass("active");
     });
@@ -222,6 +245,16 @@
       $(this).toggleClass("active");
     });
   };
+
+    /* change value
+  ------------------------------------------------------------------------------------- */
+  var changeValue = function () {
+    $(".language-val").click(function () {
+      $(".text-val-language").text($(this).text());
+    });
+
+  };
+
   /* load more
   ------------------------------------------------------------------------------------- */
   var loadmore = function () {
@@ -334,6 +367,7 @@
     loadmore();
     touchSpin();
     treeView();
+    changeValue();
     preloader();
     // setLocalColor();
     // themeSettingColor();

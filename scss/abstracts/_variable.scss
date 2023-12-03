@@ -38,7 +38,7 @@ $rgba-info: rgba(167, 2, 103, 0.1);
 $rgba-dark: rgba(27, 50, 95, 0.1);
 
 :root {
-    --surface: #e1e1e1;
+    --surface: #f5f5f5;
     --white: #fff;
     --primary: #e55223;
     --primary-bold: #5b2400;
@@ -82,7 +82,7 @@ $rgba-dark: rgba(27, 50, 95, 0.1);
     --line-3: #dbdbdb;
     --line-rgba: rgba(255, 255, 255, 0.1);
     //backdrop
-    --backdrop: #000000;
+    --backdrop: rgb(21, 21, 21);
     --bg-progress: #f0f0f1;
     // rgba colors
     --rgba-primary: rgba(135, 59, 10, 0.1);

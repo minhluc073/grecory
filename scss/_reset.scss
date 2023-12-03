@@ -439,8 +439,8 @@ code {
     max-width: 1024px;
     margin-left: auto;
     margin-right: auto;
-    padding-left: 20px;
-    padding-right: 20px;
+    padding-left: 16px;
+    padding-right: 16px;
     box-sizing: border-box;
 }
 .mw-wrapper {
@@ -651,6 +651,9 @@ code {
 .pb-14 {
     padding-bottom: 14px;
 }
+.pb-16 {
+    padding-bottom: 16px;
+}
 .pb-20 {
     padding-bottom: 20px !important;
 }
@@ -660,9 +663,7 @@ code {
 .pl-40 {
     padding-left: 40px;
 }
-.pb-16 {
-    padding-bottom: 16px !important;
-}
+
 .pb-24 {
     padding-bottom: 24px;
 }
@@ -865,7 +866,7 @@ code {
     border-radius: 20px 20px 0px 0px;
 }
 .app-content {
-    padding: 48px 0px 90px;
+    padding: 48px 0px 65px;
     &.style-1 {
         padding-top: 0;
     }

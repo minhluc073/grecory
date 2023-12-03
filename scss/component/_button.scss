@@ -15,8 +15,7 @@
         padding: 20px;
     }
     &.btn-md {
-        padding: 16px;
-        border-radius: 16px;
+        padding: 14px;
     }
     &.btn-sm {
         padding: 10px;
@@ -31,6 +30,14 @@
             color: var(--primary);
             background: var(--white);
         }
+    }
+    &.surface {
+        background: var(--surface);
+        border: 1px solid var(--surface);
+        // &:hover {
+        //     color: var(--primary);
+        //     background: var(--white);
+        // }
     }
     &.secondary {
         background: var(--white);

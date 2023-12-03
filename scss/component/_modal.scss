@@ -9,21 +9,21 @@
             border: 0;
             background: var(--white);
             box-shadow: var(--shadow-box);
-            .modal-body{
+            .modal-body {
                 padding: 8px 0px 20px;
                 border-bottom: 1px solid var(--line);
             }
-            .modal-footer{
+            .modal-footer {
                 padding: 20px 0px 0px;
                 margin: 0;
             }
         }
     }
-    &.small{
-        .modal-dialog{
+    &.small {
+        .modal-dialog {
             max-width: 260px;
             margin: 20px auto;
-        }  
+        }
     }
     &.action-sheet {
         z-index: 5000;
@@ -48,40 +48,13 @@
             border: 0;
             border-radius: 20px 20px 0px 0px;
         }
-        .filter-content {
-            height: 80vh;
-            overflow: auto;
-            // border: 1px solid $white;
-        }
-        .modal-setting {
-            pointer-events: auto;
-            .heading {
-                border-radius: 12px;
-                background-color: $white;
-                li {
-                    a {
-                        display: block;
-                        padding: 16px;
-                        color: $onSurface;
-                        text-align: center;
-                    }
-                    &:not(:last-child) {
-                        border-bottom: 1px solid $line;
-                    }
-                }
-            }
-            .bottom {
-                border-radius: 12px;
-                background-color: $white;
-                padding: 12px 0px;
-            }
-        }
+     
+        
     }
     &.full {
         .modal-dialog {
             margin: 0;
         }
-       
     }
     &.modalRight {
         .modal-dialog {
@@ -150,8 +123,8 @@
     }
     &.modalCenter {
         .modal-dialog-centered {
-            margin: 0 52px;
-            max-width: 100%;
+            margin: 0 auto;
+            max-width: 273px;
         }
     }
     &.fade {
@@ -220,8 +193,44 @@
 }
 .modal-backdrop {
     background-color: var(--backdrop);
+    &.show{
+        opacity: 0.3;
+    }
 }
 
 .modal-background {
     background-color: var(--white);
+}
+
+.modal-notiCenter {
+    background-color: var(--white);
+    border-radius: 8px;
+    backdrop-filter: blur(11px);
+    pointer-events: auto;
+    .top {
+        padding: 16px;
+        border-bottom: 1px solid var(--line);
+    }
+    .bottom{
+        display: flex;
+        a{
+            display: inline-block;
+            font-weight: 600;
+            padding: 11px 16px;
+            width: 100%;
+            text-align: center;
+            &:first-child{
+                border-right: 1px solid var(--line);
+            }
+        }
+    }
+}
+
+.modal-setting {
+    pointer-events: auto;
+    background-color: var(--white);
+    border-radius: 12px 12px 0px 0px;
+    backdrop-filter: blur(11px);
+    pointer-events: auto;
+    padding: 20px 16px;
 }
