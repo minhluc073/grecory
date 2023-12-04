@@ -64,7 +64,7 @@
                         </label>
                         <input type="checkbox" class="tf-switch-check" id="switchCheckTheme" checked> 
                     </div>
-                    <a href="noti-setting.html" class="mt-20 pb-12 line-bt d-flex justify-content-between align-items-center fw-6">
+                    <a href="#notiSetting" data-bs-toggle="modal" class="mt-20 pb-12 line-bt d-flex justify-content-between align-items-center fw-6">
                         Setting Notification
                         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="17" viewBox="0 0 16 17" fill="none">
                             <path d="M10.4748 8.96197L6.45178 12.975C6.19587 13.2304 5.78095 13.2304 5.52517 12.975C5.26936 12.7198 5.26936 12.306 5.52517 12.0508L9.08489 8.49985L5.52527 4.94903C5.26946 4.69374 5.26946 4.2799 5.52527 4.02472C5.78108 3.76943 6.19597 3.76943 6.45188 4.02472L10.4749 8.03784C10.6028 8.16549 10.6666 8.33262 10.6666 8.49983C10.6666 8.66712 10.6026 8.83438 10.4748 8.96197Z" fill="#787982"/>
@@ -117,10 +117,9 @@
   
             </div>
         </div>
-      </div>
+    </div>
 
-
-      <div class="modal fade action-sheet full" id="language">
+    <div class="modal fade action-sheet full" id="language">
         <div class="modal-dialog" role="document">
             <div class="modal-setting language">
                 <div class="fw-6 text-center text-black">Language</div>
@@ -147,9 +146,9 @@
   
             </div>
         </div>
-      </div>
+    </div>
 
-      <div class="modal fade action-sheet full" id="lockApp">
+    <div class="modal fade action-sheet full" id="lockApp">
         <div class="modal-dialog" role="document">
             <div class="modal-setting lockApp">
                 <div class="fw-6 text-center text-black">Automatically lock the following app</div>
@@ -173,8 +172,79 @@
   
             </div>
         </div>
-      </div>
+    </div>
 
+    <div class="modal fade modalRight" id="notiSetting">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="header fixed-top line4-bt">
+                    <div class="left" data-bs-dismiss="modal">
+                      <a href="javascript:void(0);" class="icon"><i class="icon-left-btn"></i></a>
+                    </div>
+                    <h6>Notification Setting</h6>  
+                </div> 
+                <div class="modal-filter app-content style-2">
+                    <div class="tf-container">
+                        <div class="mt-20 pb-16 line-bt d-flex justify-content-between align-items-center">
+                            <label for="swGeneral" class="fw-6 text-black">
+                                General Notification
+                            </label>
+                            <input type="checkbox" class="tf-switch-check" id="swGeneral" checked> 
+                        </div>
+                        <div class="mt-12 pb-16 line-bt d-flex justify-content-between align-items-center">
+                            <label for="swVibrate" class="fw-6 text-black">
+                                Vibrate
+                            </label>
+                            <input type="checkbox" class="tf-switch-check" id="swVibrate"> 
+                        </div>
+                        <div class="mt-12 pb-16 line-bt d-flex justify-content-between align-items-center">
+                            <label for="swAppUpdate" class="fw-6 text-black">
+                                App Update
+                            </label>
+                            <input type="checkbox" class="tf-switch-check" id="swAppUpdate" checked> 
+                        </div>
+                        <div class="mt-12 pb-16 line-bt d-flex justify-content-between align-items-center">
+                            <label for="swBill" class="fw-6 text-black">
+                                Bill Reminder
+                            </label>
+                            <input type="checkbox" class="tf-switch-check" id="swBill"> 
+                        </div>
+                        <div class="mt-12 pb-16 line-bt d-flex justify-content-between align-items-center">
+                            <label for="swPromotion" class="fw-6 text-black">
+                                Promotion
+                            </label>
+                            <input type="checkbox" class="tf-switch-check" id="swPromotion" checked> 
+                        </div>
+                        <div class="mt-12 pb-16 line-bt d-flex justify-content-between align-items-center">
+                            <label for="swDiscount" class="fw-6 text-black">
+                                Discount Available
+                            </label>
+                            <input type="checkbox" class="tf-switch-check" id="swDiscount" checked> 
+                        </div>
+                        <div class="mt-12 pb-16 line-bt d-flex justify-content-between align-items-center">
+                            <label for="swPayment" class="fw-6 text-black">
+                                Payment Request
+                            </label>
+                            <input type="checkbox" class="tf-switch-check" id="swPayment"> 
+                        </div>
+                        <div class="mt-12 pb-16 line-bt d-flex justify-content-between align-items-center">
+                            <label for="swService" class="fw-6 text-black">
+                                New Service Available
+                            </label>
+                            <input type="checkbox" class="tf-switch-check" id="swService" checked> 
+                        </div>
+                        <div class="mt-12 pb-16 d-flex justify-content-between align-items-center">
+                            <label for="swAvailable" class="fw-6 text-black">
+                                New Tips Available
+                            </label>
+                            <input type="checkbox" class="tf-switch-check" id="swAvailable" checked> 
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </div>
     
         
     <script type="text/javascript" src="js/bootstrap.min.js"></script>

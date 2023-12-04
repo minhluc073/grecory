@@ -183,7 +183,6 @@
     }
   };
 
-
   /* image select
   ------------------------------------------------------------------------------------- */
   var selectImages = function () {
@@ -227,10 +226,6 @@
       });
     }
 
-
-
-
-
     $(".press-toggle").on("click", function () {
       $(this).toggleClass("active");
     });
@@ -246,21 +241,21 @@
     });
   };
 
-    /* change value
+  /* change value
   ------------------------------------------------------------------------------------- */
   var changeValue = function () {
     $(".language-val").click(function () {
       $(".text-val-language").text($(this).text());
     });
-
   };
 
   /* load more
   ------------------------------------------------------------------------------------- */
   var loadmore = function () {
     if ($("ul").hasClass("loadmore-item")) {
-      $(".fl-item").slice(0, 3).show();
+      $(".fl-item").slice(0, 9).show();
       $("#button-loadmore").on("click", function (e) {
+        console.log("Loadin");
         e.preventDefault();
         $(".fl-item:hidden").slice(0, 3).slideDown();
         if ($(".fl-item:hidden").length == 0) {
@@ -373,6 +368,5 @@
     // themeSettingColor();
     // toggleTheme();
     // setToggleTheme();
-   
   });
 })(jQuery);
