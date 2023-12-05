@@ -567,11 +567,6 @@ code {
   line-height: 18px;
 }
 
-.text-caption-2 {
-  font-size: 12px;
-  line-height: 16px;
-}
-
 .text-md-start {
   font-size: 13px;
   line-height: 18.2px;
@@ -579,7 +574,7 @@ code {
 
 .text-sm-start {
   font-size: 12px;
-  line-height: 16.8px;
+  line-height: 16px;
 }
 
 .fs-16 {
@@ -621,6 +616,10 @@ code {
 
 .fw-italic {
   font-style: italic;
+}
+
+.mt-2 {
+  margin-top: 2px !important;
 }
 
 .mt-4 {
@@ -1408,56 +1407,17 @@ code {
   font-size: 22px;
   color: var(--text-4);
 }
-.header.bg-surface .icon {
-  background-color: var(--white);
-}
-.header.absolute {
-  position: absolute;
-  width: 100%;
-  top: 0;
-  left: 0;
-  right: 0;
-  max-width: 1024px;
-  margin: 0 auto;
-  background: transparent;
-}
-.header.absolute .left,
-.header.absolute .right {
-  background: rgba(255, 255, 255, 0.2);
-  backdrop-filter: blur(2px);
-  border-radius: 12px;
-}
-.header.absolute .left .icon,
-.header.absolute .right .icon {
-  border-color: transparent;
-  color: #fff;
-}
-.header.absolute h3 {
-  color: #fff;
-}
 
 .header-style2 {
-  padding: 20px;
-}
-.header-style2 .inner {
   display: flex;
-  align-items: center;
   justify-content: space-between;
-  gap: 10px;
+  align-items: flex-start;
+  padding: 16px 20px;
 }
-.header-style2 .inner .content {
-  flex-grow: 1;
-}
-.header-style2 .inner .right {
-  width: 48px;
-  height: 48px;
+.header-style2 .inner-right {
   display: flex;
   align-items: center;
-  justify-content: center;
-  border: 1px solid var(--line);
-  border-radius: 20px;
-  color: var(--text-4);
-  font-size: 22px;
+  gap: 10px;
 }
 
 .fixed-top {
@@ -3331,6 +3291,25 @@ html:not([dir=rtl]) .noUi-horizontal .noUi-handle {
   top: -5px;
   width: 24px;
   height: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.badge-icon {
+  position: relative;
+}
+.badge-icon .badge {
+  position: absolute;
+  right: -6px;
+  top: -5px;
+  width: 14px;
+  height: 14px;
+  font-size: 10px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 13px;
+  padding: 0;
   display: flex;
   align-items: center;
   justify-content: center;

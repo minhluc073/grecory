@@ -457,10 +457,7 @@ code {
     font-size: 14px;
     line-height: 18px;
 }
-.text-caption-2 {
-    font-size: 12px;
-    line-height: 16px;
-}
+
 // .text-justify {
 //     font-size: 14px;
 //     font-weight: 500;
@@ -474,7 +471,7 @@ code {
 }
 .text-sm-start {
     font-size: 12px;
-    line-height: 16.8px;
+    line-height: 16px;
 }
 
 // font-size:
@@ -512,6 +509,9 @@ code {
 }
 // spacing
 //margin
+.mt-2{
+    margin-top: 2px !important;
+}
 .mt-4 {
     margin-top: 4px !important;
 }
