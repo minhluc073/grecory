@@ -451,3 +451,11 @@
     font-size: 22px;
     color: var(--text-4);
 }
+
+.btn-filter {
+    width: 36px;
+    height: 36px;
+    border-radius: 8px;
+    @include flex(center, center);
+    border: 1px solid var(--line);
+}
