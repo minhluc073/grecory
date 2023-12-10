@@ -97,7 +97,7 @@
   --line-3: #dbdbdb;
   --line-rgba: rgba(255, 255, 255, 0.1);
   --backdrop: rgb(21, 21, 21);
-  --bg-progress: #f0f0f1;
+  --bg-progress: rgba(21, 21, 21, 0.15);
   --rgba-primary: rgba(135, 59, 10, 0.1);
   --rgba-success: rgba(30, 127, 17, 0.1);
   --rgba-danger: rgba(225, 0, 0, 0.1);
@@ -1070,6 +1070,10 @@ code {
 
 .rolate-90 {
   transform: rotate(90deg);
+}
+
+.radius-20 {
+  border-radius: 20px;
 }
 
 .lr-radius-20 {
@@ -2729,8 +2733,8 @@ html:not([dir=rtl]) .noUi-horizontal .noUi-handle {
 }
 
 .swiper-wrapper-lr {
-  margin-right: -20px;
-  padding-right: 18px;
+  margin-right: -16px;
+  padding-right: 16px;
 }
 
 /*------------ alert ---------------- */
@@ -4515,6 +4519,7 @@ html:not([dir=rtl]) .noUi-horizontal .noUi-handle {
   align-items: center;
   border-radius: 14px;
   background-color: #f8f2e2;
+  overflow: hidden;
 }
 .banner-style1 .content-left {
   padding-top: 13.5px;
@@ -4525,6 +4530,134 @@ html:not([dir=rtl]) .noUi-horizontal .noUi-handle {
   width: 168.028px;
   height: 123.688px;
   transform: rotate(6.586deg);
+}
+.banner-style1.st1 {
+  height: 120px;
+}
+.banner-style1.st1 .content-left {
+  padding-left: 37px;
+}
+.banner-style1.st1 .box-img img {
+  width: 159px;
+  height: 158px;
+  transform: unset;
+}
+.banner-style1.st2 {
+  background-color: #e1e3ea;
+}
+.banner-style1.st2 .box-img img {
+  width: 146px;
+  height: 109px;
+  transform: unset;
+}
+
+.banner-style2 {
+  position: relative;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: space-between;
+  background-size: cover;
+  backdrop-filter: blur(7.5px);
+  border-radius: 14px;
+  overflow: hidden;
+}
+.banner-style2::after {
+  position: absolute;
+  z-index: -1;
+  content: "";
+  width: 100%;
+  height: 100%;
+  background: rgba(19, 19, 23, 0.2);
+  backdrop-filter: blur(7.5px);
+}
+.banner-style2 .content-left {
+  background: linear-gradient(92deg, #fa683a 6.45%, rgba(250, 104, 58, 0) 73.28%);
+  padding: 18px 30px;
+  padding-right: 0;
+}
+.banner-style2 .content-left .tf-btn {
+  padding: 7px 12px;
+  background-color: var(--white);
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 18px;
+}
+.banner-style2 .content-right {
+  transform: rotate(22deg);
+  margin-right: -40px;
+}
+.banner-style2 .content-right img {
+  width: 86px;
+  height: 86px;
+  border-radius: 13.231px;
+}
+.banner-style2 .content-right .box-img {
+  background-color: var(--white);
+  border-radius: 13.231px;
+}
+.banner-style2 .content-right .top,
+.banner-style2 .content-right .bottom {
+  display: flex;
+  gap: 7px;
+}
+.banner-style2 .content-right .top {
+  margin-top: -20px;
+}
+.banner-style2 .content-right .bottom {
+  margin-left: 40px;
+  margin-right: -10px;
+  margin-bottom: -32px;
+  margin-top: 6px;
+}
+
+.banner-style3 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 14px;
+  background-color: #e1e3ea;
+  overflow: hidden;
+  padding: 0px 50px;
+  gap: 40px;
+}
+.banner-style3 .content-right {
+  padding: 21px 0px;
+}
+.banner-style3 .content-right span {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 18px;
+  color: #606dfa;
+}
+.banner-style3 .content-right .desc {
+  font-size: 10px;
+  font-weight: 400;
+  line-height: 13px;
+  color: var(--secondary);
+}
+.banner-style3 img {
+  width: 100.976px;
+  height: 118.458px;
+}
+
+.box-product .img {
+  width: 102px;
+  height: 102px;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.progress-product {
+  border-radius: 0px;
+  height: 13px;
+}
+.progress-product .progress-bar {
+  border-radius: 0;
+  font-size: 10px;
+  font-weight: 500;
+  line-height: 13px;
+  padding-left: 8px;
+  text-align: left;
 }
 
 .preload {
@@ -5097,6 +5230,42 @@ html:not([dir=rtl]) .noUi-horizontal .noUi-handle {
 }
 .box-star-review .content-right .line-progress .progress .progress-bar {
   background-color: var(--primary-btn);
+}
+
+.tf-swiper .banner-style1 .content-left .title {
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 16px;
+  color: #e74141;
+  margin-bottom: 3px;
+}
+.tf-swiper .banner-style1 .box-img img {
+  width: 144px;
+  height: 106px;
+}
+.tf-swiper .banner-style2 .content-left {
+  padding: 15px 30px;
+  padding-right: 0;
+}
+.tf-swiper .banner-style2 .content-right {
+  margin-right: -75px;
+}
+.tf-swiper .banner-style2 .content-right .bottom {
+  margin-bottom: -60px;
+}
+
+span.countdown__value {
+  background-color: var(--primary);
+  color: var(--white);
+  font-size: 10px;
+  font-weight: 400;
+  line-height: 13px;
+  padding: 4px;
+  border-radius: 2px;
+}
+
+.countdown__label {
+  margin: 0px 4px;
 }
 
 /*--------- profile ---------- */

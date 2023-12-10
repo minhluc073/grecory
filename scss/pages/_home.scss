@@ -298,3 +298,47 @@
     .action-like {
     }
 }
+
+.tf-swiper {
+    .banner-style1 {
+        .content-left {
+            .title {
+                font-size: 12px;
+                font-weight: 700;
+                line-height: 16px;
+                color: #e74141;
+                margin-bottom: 3px;
+            }
+        }
+        .box-img {
+            img {
+                width: 144px;
+                height: 106px;
+            }
+        }
+    }
+    .banner-style2 {
+        .content-left {
+            padding: 15px 30px;
+            padding-right: 0;
+        }
+        .content-right {
+            margin-right: -75px;
+            .bottom {
+                margin-bottom: -60px;
+            }
+        }
+    }
+}
+span.countdown__value {
+    background-color: var(--primary);
+    color: var(--white);
+    font-size: 10px;
+    font-weight: 400;
+    line-height: 13px;
+    padding: 4px;
+    border-radius: 2px;
+}
+.countdown__label {
+    margin: 0px 4px;
+}
