@@ -36,7 +36,7 @@
     justify-content: space-between;
     align-items: flex-start;
     padding: 16px 20px;
-    .inner-right{
+    .inner-right {
         display: flex;
         align-items: center;
         gap: 10px;
@@ -52,34 +52,30 @@
     left: 0;
     right: 0;
     background-color: var(--white);
-
 }
 
 .header-search {
-    padding: 10px 20px 8px;
+    @include flex(center, center);
+    padding: 8px 20px 12px;
+    min-height: 48px;
+    gap: 20px;
+    .icon {
+        height: 24px;
+        width: 24px;
+        font-size: 20px;
+        @include flex(center, center);
+    }
 
-    &.st2 {
-        .search-box {
-            .search-field {
-                padding: 8px 12px;
-                padding-right: 35px;
-            }
-            .search-field:valid ~ .icon-cancel {
-                @include flex(center, center);
-            }
-
-            .icon-cancel {
-                display: none;
-                position: absolute;
-                top: 9px;
-                right: 12px;
-                background-color: $secondary;
-                color: $white;
-                font-size: 10px;
-                width: 16px;
-                height: 16px;
-                border-radius: 100px;
-            }
+    .left {
+        .icon {
+            font-size: 14px;
+            color: var(--onSurface);
+        }
+    }
+    .right {
+        .icon {
+            font-size: 22px;
+            color: var(--text-4);
         }
     }
 }

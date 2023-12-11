@@ -225,6 +225,101 @@
         text-align: left;
     }
 }
+.cart-store {
+    display: flex;
+    align-items: center;
+    .content {
+        flex-grow: 1;
+        margin-left: 12px;
+    }
+    .desc {
+        display: flex;
+        gap: 8px;
+        li {
+            &:first-child {
+                padding-right: 8px;
+                border-right: 1px solid var(--line);
+            }
+        }
+    }
+    .tf-btn {
+        width: auto;
+    }
+}
+.list-star {
+    display: flex;
+    align-items: center;
+    gap: 2;
+    .icon {
+        font-size: 12px;
+    }
+}
+
+.box-layout-2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 12px;
+    row-gap: 16px;
+}
+.card-product {
+    border-radius: 10px;
+    border: 1px solid var(--line);
+    position: relative;
+    .box-img {
+        background-color: var(--surface);
+    }
+    .content {
+        padding: 8px 12px;
+        ul {
+            margin-top: 2px;
+            display: flex;
+            gap: 6px;
+
+            li {
+                &:first-child {
+                    padding-right: 6px;
+                    border-right: 1px solid var(--line);
+                }
+            }
+        }
+    }
+    .box-sale {
+        position: absolute;
+        top: 7px;
+        left: 8px;
+        right: 8px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        .sale {
+            border-radius: 4px;
+            font-size: 12px;
+            line-height: 16px;
+            color: var(--white);
+            padding: 0px 4px;
+            background-color: #e74141;
+        }
+    }
+}
+.default-press {
+    width: 24px;
+    height: 24px;
+    @include flex(center, center);
+    background-color: var(--white);
+    border-radius: 56px;
+    &.active {
+        svg {
+            path {
+                fill: #e74141;
+                stroke: #e74141;
+            }
+        }
+        i {
+            color: #e74141;
+        }
+    }
+}
 
 .preload {
     overflow: hidden;

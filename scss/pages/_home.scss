@@ -167,38 +167,7 @@
         }
     }
 }
-.default-press {
-    &.active {
-        svg {
-            path {
-                fill: var(--primary-btn);
-                stroke: var(--primary-btn);
-            }
-        }
-        i {
-            color: var(--primary-btn);
-        }
-    }
-}
-.action-like {
-    display: flex;
-    align-items: center;
-    gap: 6px;
-    font-size: 12px;
-    font-weight: 400;
-    line-height: 150%;
-    color: #8e8e93;
-    &.active {
-        color: var(--primary-btn);
 
-        svg {
-            path {
-                fill: var(--primary-btn);
-                stroke: var(--primary-btn);
-            }
-        }
-    }
-}
 
 .box-add-photo {
     display: flex;

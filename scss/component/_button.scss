@@ -4,9 +4,7 @@
     @include flex(center, center);
     gap: 8px;
     width: 100%;
-    font-size: 16px;
     font-weight: 600;
-    line-height: 21px;
     &.inline {
         width: auto;
     }
@@ -18,8 +16,8 @@
         padding: 14px;
     }
     &.btn-sm {
-        padding: 10px;
-        border-radius: 12px;
+        padding: 7px 12px;
+        border-radius: 4px;
     }
     // color
     &.primary {
@@ -458,4 +456,12 @@
     border-radius: 8px;
     @include flex(center, center);
     border: 1px solid var(--line);
+}
+
+.btn-cart {
+    width: 32px;
+    height: 32px;
+    @include flex(center, center);
+    background-color: var(--primary);
+    border-radius: 99px;
 }

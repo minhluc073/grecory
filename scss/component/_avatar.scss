@@ -7,6 +7,7 @@
     }
     &.round {
         border-radius: 50%;
+        overflow: hidden;
     }
     &.avt-status {
         position: relative;
@@ -46,6 +47,11 @@
     width: 70px;
     min-width: 70px;
     height: 70px;
+}
+.avt-80 {
+    width: 80px;
+    min-width: 80px;
+    height: 80px;
 }
 .avt-96 {
     width: 96px;
