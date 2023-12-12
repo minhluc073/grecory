@@ -509,7 +509,7 @@ code {
 }
 // spacing
 //margin
-.mt-2{
+.mt-2 {
     margin-top: 2px !important;
 }
 .mt-4 {
@@ -759,6 +759,9 @@ code {
 .text-muted {
     color: var(--text-4) !important;
 }
+.text-blue {
+    color: var(--blue) !important;
+}
 .text-1 {
     color: var(--text);
 }
@@ -846,8 +849,6 @@ code {
     gap: 25px;
 }
 
-
-
 .lr-radius {
     border-radius: 12px 12px 0px 0px;
 }
@@ -864,7 +865,7 @@ code {
 .rolate-90 {
     transform: rotate(90deg);
 }
-.radius-20{
+.radius-20 {
     border-radius: 20px;
 }
 .lr-radius-20 {

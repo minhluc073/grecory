@@ -64,14 +64,15 @@
     align-items: center;
     gap: 4px;
 
-    .box-img {
-        width: 80px;
-        height: 80px;
-        padding: 10px;
-        background-color: #f8f2e2;
-        border-radius: 12px;
-        @include flex(center, center);
-    }
+  
+}
+.box-img-product {
+    width: 80px;
+    height: 80px;
+    padding: 10px;
+    background-color: #f8f2e2;
+    border-radius: 12px;
+    @include flex(center, center);
 }
 .banner-style1 {
     display: flex;
@@ -317,6 +318,16 @@
         }
         i {
             color: #e74141;
+        }
+    }
+}
+.box-title-product{
+    display: flex;
+    gap: 12px;
+    li{
+        &:first-child{
+            padding-right: 12px;
+            border-right: 1px solid var(--line);
         }
     }
 }

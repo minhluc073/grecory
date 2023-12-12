@@ -59,7 +59,7 @@
   --primary-bold: #5b2400;
   --primary-btn: #c96a28;
   --secondary: #787982;
-  --secondary2: #B9BAC3;
+  --secondary2: #b9bac3;
   --success: #1e7f11;
   --success2: #54b24c;
   --danger: #e10000;
@@ -75,7 +75,7 @@
   --orange3: #f9cdad;
   --pink: #fe4365;
   --purple: #542437;
-  --blue: #69d2e7;
+  --blue: #606dfa;
   --blue2: #a7dbd8;
   --blue3: #4ecdc4;
   --blue4: #036564;
@@ -940,6 +940,10 @@ code {
 
 .text-muted {
   color: var(--text-4) !important;
+}
+
+.text-blue {
+  color: var(--blue) !important;
 }
 
 .text-1 {
@@ -3413,7 +3417,7 @@ html:not([dir=rtl]) .noUi-horizontal .noUi-handle {
   z-index: 10000;
   transform: translate(0, 100%);
   max-width: 100%;
-  margin: 20px;
+  margin: 16px;
 }
 .modal.action-sheet.show .modal-dialog {
   transform: translate(0, 0);
@@ -3578,6 +3582,20 @@ html:not([dir=rtl]) .noUi-horizontal .noUi-handle {
   backdrop-filter: blur(11px);
   pointer-events: auto;
   padding: 20px 16px;
+}
+
+.modal-boxContent {
+  pointer-events: auto;
+}
+.modal-boxContent .item a {
+  border-radius: 12px;
+  background-color: var(--white);
+  display: flex;
+  padding: 18px 16px;
+  justify-content: center;
+}
+.modal-boxContent .item:last-child {
+  margin-top: 10px;
 }
 
 /*------------ timeline ---------------- */
@@ -4511,7 +4529,8 @@ html:not([dir=rtl]) .noUi-horizontal .noUi-handle {
   align-items: center;
   gap: 4px;
 }
-.category-item .box-img {
+
+.box-img-product {
   width: 80px;
   height: 80px;
   padding: 10px;
@@ -4758,6 +4777,15 @@ html:not([dir=rtl]) .noUi-horizontal .noUi-handle {
 }
 .default-press.active i {
   color: #e74141;
+}
+
+.box-title-product {
+  display: flex;
+  gap: 12px;
+}
+.box-title-product li:first-child {
+  padding-right: 12px;
+  border-right: 1px solid var(--line);
 }
 
 .preload {
