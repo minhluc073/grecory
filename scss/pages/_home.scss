@@ -168,7 +168,6 @@
     }
 }
 
-
 .box-add-photo {
     display: flex;
     gap: 8px;
@@ -266,6 +265,11 @@
 .wd-list-review {
     .action-like {
     }
+}
+.banner-img img {
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
 }
 
 .tf-swiper {

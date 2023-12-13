@@ -465,3 +465,21 @@
     background-color: var(--primary);
     border-radius: 99px;
 }
+.cart-product {
+    width: 56px;
+    height: 56px;
+    @include flex(center, center);
+    border-radius: 50px;
+    background: rgba(21, 21, 21, 0.4);
+    backdrop-filter: blur(8px);
+    &.style2 {
+        width: 40px;
+        height: 40px;
+        border-radius: 999px;
+        background: rgba(255, 255, 255, 0.2);
+        backdrop-filter: blur(8px);
+        .badge-icon {
+            margin-left: -4px;
+        }
+    }
+}

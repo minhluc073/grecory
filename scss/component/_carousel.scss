@@ -76,10 +76,10 @@
 //     }
 // }
 .dots-tes {
-    position: unset;
     .swiper-pagination-bullet {
-        width: 8px;
-        height: 8px;
+        margin: 0px 2px !important;
+        width: 6px;
+        height: 6px;
         opacity: 0.3;
         border-radius: 50px;
         background-color: var(--primary);

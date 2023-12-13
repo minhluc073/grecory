@@ -1,4 +1,3 @@
-
 if ($(".tf-swiper").length > 0) {
   var spacing = $(".tf-swiper").data("space-between");
   var preview = $(".tf-swiper").data("preview");
@@ -11,7 +10,10 @@ if ($(".tf-swiper").length > 0) {
     spaceBetween: spacing,
     observer: true,
     observeParents: true,
-
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+    },
     breakpoints: {
       1024: {
         slidesPerView: desktop,

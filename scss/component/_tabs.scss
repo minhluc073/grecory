@@ -35,25 +35,40 @@
         }
     }
 }
+
+.nav-item {
+    .nav-link {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-bottom: 6px;
+        &.active {
+            color: var(--onSurface);
+            border-bottom: 2px solid var(--primary);
+
+            svg path {
+                fill: var(--primary-btn);
+            }
+        }
+    }
+}
+
 .product-tabs {
     display: flex;
     justify-content: space-between;
     border-bottom: 1px solid var(--line);
+}
+.tab-3-item {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    border-bottom: 1px solid var(--line);
     .nav-item {
         .nav-link {
-         
             display: flex;
             justify-content: center;
             align-items: center;
-            padding-bottom: 6px;
-            &.active {
-                color: var(--onSurface);
-                border-bottom: 1px solid var(--primary);
-
-                svg path {
-                    fill: var(--primary-btn);
-                }
-            }
+            padding-bottom: 8px;
+            
         }
     }
 }
