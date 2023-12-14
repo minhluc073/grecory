@@ -1099,6 +1099,10 @@ code {
 .app-content.style-4 {
   padding-top: 60px;
 }
+.app-content.style-5 {
+  padding-top: 0;
+  padding-bottom: 160px;
+}
 
 /*------------ Settings ----------------- */
 /*------------ theme color ---------------- */
@@ -2643,7 +2647,7 @@ html:not([dir=rtl]) .noUi-horizontal .noUi-handle {
   border-color: #fff;
 }
 
-/*------------ menubar ---------------- */
+/*------------ footer ---------------- */
 .footer-fixed {
   position: fixed;
   bottom: 0;
@@ -2751,6 +2755,35 @@ html:not([dir=rtl]) .noUi-horizontal .noUi-handle {
 .menubar-footer.style-5 {
   padding: 18px 19px;
   border-radius: 16px;
+}
+
+.cart-footer {
+  padding: 12px 16px 20px;
+}
+.cart-footer .inner {
+  padding-left: 0;
+  padding-right: 0;
+  max-width: 1024px;
+  margin-right: auto;
+  margin-left: auto;
+}
+.cart-footer .bottom-btn {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  margin-top: 12px;
+  padding-top: 12px;
+  border-top: 1px solid var(--line);
+}
+.cart-footer .bottom-btn .press-toggle {
+  width: 44px;
+  height: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 6px;
+  border: 1px solid var(--line);
+  flex-shrink: 0;
 }
 
 /*------------ carousel ---------------- */
@@ -4024,11 +4057,11 @@ html:not([dir=rtl]) .noUi-horizontal .noUi-handle {
 }
 .tf-stepper .bootstrap-touchspin .btn {
   border-radius: 46px;
-  width: 46px;
-  height: 46px;
+  width: 48px;
+  height: 48px;
   padding: 0;
   text-align: center;
-  font-size: 22px;
+  font-size: 20px;
   color: var(--onSurface);
   font-weight: 500;
   background-color: transparent;
@@ -4050,6 +4083,9 @@ html:not([dir=rtl]) .noUi-horizontal .noUi-handle {
 }
 .tf-stepper.round-1 .bootstrap-touchspin .btn {
   border-radius: 14px;
+}
+.tf-stepper.round-2 .bootstrap-touchspin .btn {
+  border-radius: 5px;
 }
 .tf-stepper.primary .bootstrap-touchspin .btn {
   border-color: transparent;
@@ -4075,6 +4111,28 @@ html:not([dir=rtl]) .noUi-horizontal .noUi-handle {
   border-color: transparent;
   background-color: var(--dark);
   color: #fff;
+}
+.tf-stepper.surface .bootstrap-touchspin .btn {
+  border-color: transparent;
+  background-color: var(--surface);
+}
+.tf-stepper.sm {
+  width: 106px;
+}
+.tf-stepper.sm .bootstrap-touchspin .btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 28px;
+  height: 28px;
+}
+.tf-stepper.sm .stepper {
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 21px;
+  padding: 0;
+  border: 0;
 }
 
 /*------------ image box ---------------- */
@@ -5662,6 +5720,66 @@ span.countdown__value {
 }
 .fixed-chat .inner .message-box {
   flex-grow: 1;
+}
+
+/*--------- order ---------- */
+.card-style2 {
+  padding: 16px;
+  border-radius: 10px;
+  background-color: var(--white);
+}
+
+.order-box li {
+  padding-bottom: 12px;
+  border-bottom: 1px solid var(--line);
+}
+.order-box li:not(:first-child) {
+  margin-top: 16px;
+}
+
+.order-item {
+  display: flex;
+  gap: 6;
+  justify-content: space-between;
+  align-items: center;
+}
+.order-item .content {
+  flex-grow: 1;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.order-item .img {
+  width: 80px;
+  height: 80px;
+}
+
+.order-price {
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 22px;
+  color: var(--onSurface);
+}
+
+.btn-order {
+  padding: 6px 8px;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 18px;
+  color: var(--white);
+}
+.btn-order.process {
+  background-color: #f8bd09;
+}
+.btn-order.shipped {
+  background-color: #606dfa;
+}
+.btn-order.completed {
+  background-color: #25c364;
+}
+.btn-order.cancel {
+  background-color: #e74141;
 }
 
 /*# sourceMappingURL=styles.css.map */

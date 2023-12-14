@@ -10,11 +10,11 @@
 
         .btn {
             border-radius: 46px;
-            width: 46px;
-            height: 46px;
+            width: 48px;
+            height: 48px;
             padding: 0;
             text-align: center;
-            font-size: 22px;
+            font-size: 20px;
             color: var(--onSurface);
             font-weight: 500;
             background-color: transparent;
@@ -39,6 +39,13 @@
         .bootstrap-touchspin {
             .btn {
                 border-radius: 14px;
+            }
+        }
+    }
+    &.round-2 {
+        .bootstrap-touchspin {
+            .btn {
+                border-radius: 5px;
             }
         }
     }
@@ -86,6 +93,33 @@
                 background-color: var(--dark);
                 color: $white;
             }
+        }
+    }
+    &.surface {
+        .bootstrap-touchspin {
+            .btn {
+                border-color: transparent;
+                background-color: var(--surface);
+            }
+        }
+    }
+    &.sm {
+        width: 106px;
+
+        .bootstrap-touchspin {
+            .btn {
+                @include flex(center, center);
+                width: 28px;
+                height: 28px;
+            }
+        }
+        .stepper {
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: 21px;
+            padding: 0;
+            border: 0;
         }
     }
 }
