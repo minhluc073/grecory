@@ -846,6 +846,28 @@ code {
   padding-bottom: 200px;
 }
 
+.p-16 {
+  padding: 16px;
+}
+
+.py-16 {
+  padding-top: 16px;
+  padding-bottom: 16px;
+}
+
+.py-12 {
+  padding-top: 12px;
+  padding-bottom: 12px;
+}
+
+.p-18 {
+  padding: 18px;
+}
+
+.p-20 {
+  padding: 20px;
+}
+
 .bg-primary {
   background-color: var(--primary) !important;
 }
@@ -1076,6 +1098,10 @@ code {
   transform: rotate(90deg);
 }
 
+.radius-12 {
+  border-radius: 12px;
+}
+
 .radius-20 {
   border-radius: 20px;
 }
@@ -1102,6 +1128,9 @@ code {
 .app-content.style-5 {
   padding-top: 0;
   padding-bottom: 160px;
+}
+.app-content .style-6 {
+  padding-bottom: 80px;
 }
 
 /*------------ Settings ----------------- */
@@ -5739,7 +5768,7 @@ span.countdown__value {
 
 .order-item {
   display: flex;
-  gap: 6;
+  gap: 6px;
   justify-content: space-between;
   align-items: center;
 }
@@ -5780,6 +5809,54 @@ span.countdown__value {
 }
 .btn-order.cancel {
   background-color: #e74141;
+}
+
+.time-line-order {
+  display: flex;
+  align-items: center;
+  padding: 0 40px;
+}
+.time-line-order .progress-order {
+  margin-top: 8px;
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translate(-50%);
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 18px;
+  color: var(--onSurface);
+  white-space: nowrap;
+}
+.time-line-order .progress-order.completed {
+  color: var(--secondary);
+}
+.time-line-order .icon {
+  position: relative;
+}
+.time-line-order .icon .icon-check {
+  width: 16px;
+  height: 16px;
+  background: var(--primary);
+  font-size: 8px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--white);
+  border-radius: 50%;
+}
+.time-line-order .icon.completed .icon-check {
+  background-color: var(--line);
+  color: var(--secondary);
+}
+.time-line-order .line {
+  height: 1px;
+  background-color: var(--primary);
+  flex-grow: 1;
+  margin: 0px 8px;
+}
+.time-line-order .line.completed {
+  background-color: var(--line);
 }
 
 /*# sourceMappingURL=styles.css.map */

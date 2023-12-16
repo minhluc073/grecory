@@ -686,6 +686,23 @@ code {
     padding-bottom: 200px;
 }
 
+.p-16{
+    padding: 16px;
+}
+.py-16{
+    padding-top: 16px;
+    padding-bottom: 16px;
+}
+.py-12{
+    padding-top: 12px;
+    padding-bottom: 12px;
+}
+.p-18{
+    padding: 18px;
+}
+.p-20{
+    padding: 20px;
+}
 .bg-primary {
     background-color: var(--primary) !important;
 }
@@ -865,6 +882,9 @@ code {
 .rolate-90 {
     transform: rotate(90deg);
 }
+.radius-12{
+    border-radius: 12px;
+}
 .radius-20 {
     border-radius: 20px;
 }
@@ -888,5 +908,8 @@ code {
     &.style-5{
         padding-top: 0;
         padding-bottom: 160px;
+    }
+    .style-6{
+        padding-bottom: 80px;
     }
 }
