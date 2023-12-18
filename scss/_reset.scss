@@ -464,6 +464,10 @@ code {
 //     line-height: 19.6px;
 // }
 // text-size
+.text-lg{
+    font-size: 18px;
+    line-height: 22px;
+}
 
 .text-md-start {
     font-size: 13px;
@@ -472,6 +476,10 @@ code {
 .text-sm-start {
     font-size: 12px;
     line-height: 16px;
+}
+.text-sm {
+    font-size: 10px;
+    line-height: 13px;
 }
 
 // font-size:
@@ -590,6 +598,9 @@ code {
 .mb-20 {
     margin-bottom: 20px;
 }
+.mr--16{
+    margin-right: -16px;
+}
 .mr--20 {
     margin-right: -20px;
 }
@@ -686,21 +697,21 @@ code {
     padding-bottom: 200px;
 }
 
-.p-16{
+.p-16 {
     padding: 16px;
 }
-.py-16{
+.py-16 {
     padding-top: 16px;
     padding-bottom: 16px;
 }
-.py-12{
+.py-12 {
     padding-top: 12px;
     padding-bottom: 12px;
 }
-.p-18{
+.p-18 {
     padding: 18px;
 }
-.p-20{
+.p-20 {
     padding: 20px;
 }
 .bg-primary {
@@ -751,6 +762,9 @@ code {
 }
 .text-secondary {
     color: var(--secondary) !important;
+}
+.text-secondary2 {
+    color: var(--secondary2) !important;
 }
 .text-onSurface {
     color: $onSurface !important;
@@ -882,7 +896,7 @@ code {
 .rolate-90 {
     transform: rotate(90deg);
 }
-.radius-12{
+.radius-12 {
     border-radius: 12px;
 }
 .radius-20 {
@@ -905,11 +919,11 @@ code {
     &.style-4 {
         padding-top: 60px;
     }
-    &.style-5{
+    &.style-5 {
         padding-top: 0;
         padding-bottom: 160px;
     }
-    .style-6{
+    .style-6 {
         padding-bottom: 80px;
     }
 }

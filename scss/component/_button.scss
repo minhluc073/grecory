@@ -464,6 +464,9 @@
     @include flex(center, center);
     background-color: var(--primary);
     border-radius: 99px;
+    svg{
+        margin-right: 1px;
+    }
 }
 .cart-product {
     width: 56px;

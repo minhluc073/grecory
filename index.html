@@ -70,7 +70,7 @@
                 </svg>
                 <i class="badge danger">2</i>
             </span>
-            <span class="d-inline-flex flex-column align-items-center badge-icon mt-2">
+            <span class="d-inline-flex flex-column align-items-center badge-icon mt-2" data-bs-target="#noti" data-bs-toggle="modal">
                 <svg xmlns="http://www.w3.org/2000/svg" width="18" height="15" viewBox="0 0 18 15" fill="none">
                     <path d="M14 6.6665C14 5.34042 13.4732 4.06865 12.5355 3.13097C11.5979 2.19329 10.3261 1.6665 9 1.6665C7.67392 1.6665 6.40215 2.19329 5.46447 3.13097C4.52678 4.06865 4 5.34042 4 6.6665C4 12.4998 1.5 14.1665 1.5 14.1665H16.5C16.5 14.1665 14 12.4998 14 6.6665Z" stroke="#787982" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
                 </svg>
@@ -542,6 +542,377 @@
             </div>
         </div>
     </div>
+
+    <div class="modal fade modalRight" id="noti">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="header fixed-top line4-bt">
+                    <div class="left" data-bs-dismiss="modal">
+                      <a href="javascript:void(0);" class="icon"><i class="icon-left-btn"></i></a>
+                    </div>
+                    <h6>Help Center</h6>  
+                </div> 
+                <div class="modal-filter app-content style-2">
+                    <div class="tf-container">
+                        <ul class="product-tabs mt-16" role="tablist">
+                            <li class="nav-item" role="presentation">
+                              <a class="nav-link active" data-bs-toggle="tab" data-bs-target="#all">All Notification</a>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                              <a class="nav-link" data-bs-toggle="tab" data-bs-target="#voucher">Voucher</a>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <a class="nav-link" data-bs-toggle="tab" data-bs-target="#order">Order</a>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <a class="nav-link" data-bs-toggle="tab" data-bs-target="#promotion">Promotion</a>
+                            </li>
+                        </ul>
+                        <div class="tab-content mt-16">
+                            <ul class="tab-pane fade active show" id="all" role="tabpanel">
+                                <li class="pb-12 line-bt">
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <h6>Order Cancelled !!</h6>
+                                        <span class="fw-5 text-black text-sm-start">5 Min Ago</span>
+                                    </div>
+                                    <div class="mt-4 d-flex justify-content-between align-items-center gap-8">
+                                        <p class="text-caption text-black">
+                                            Your order is cancelled due to some kitchen issues.i hope you understand this and thank you in advance for support us.
+                                        </p>
+                                        <span class="dot  flex-shrink-0"></span>
+                                    </div>
+                                </li>
+                                <li class="pt-12 pb-12 line-bt">
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <h6 class="text-secondary">Voucher 50%</h6>
+                                        <span class="fw-5 text-sm-start">7/1/2023</span>
+                                    </div>
+                                    <p class="text-caption mt-4">
+                                        We gives you 20% offcoupon for all bills, applicable for bills paid through Alipay wallet!
+                                    </p>
+                                </li>
+                                <li class="pt-12 pb-12 line-bt">
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <h6 class="text-secondary">New Service Available!</h6>
+                                        <span class="fw-5 text-sm-start">25 Min Ago</span>
+                                    </div>
+                                    <p class="text-caption mt-4">
+                                        You can make multiple food orders at one tile you can also cancel orders.
+                                    </p>
+                                </li>
+                                <li class="pt-12 pb-12 line-bt">
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <h6>Credit Card Connected</h6>
+                                        <span class="fw-5 text-black text-sm-start">1 Hour  Ago</span>
+                                    </div>
+                                    <div class="mt-4 d-flex justify-content-between align-items-center gap-8">
+                                        <p class="text-caption text-black">
+                                            Your credit card successfully connected with foodfest.
+                                        </p>
+                                        <span class="dot flex-shrink-0"></span>
+                                    </div>
+                                </li>
+                                <li class="pt-12 pb-12 line-bt">
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <h6 class="text-secondary">Voucher Freeship</h6>
+                                        <span class="fw-5 text-sm-start">5/1/2023</span>
+                                    </div>
+                                    <p class="text-caption mt-4">
+                                        We gives you 20% offcoupon for all bills, applicable for bills paid through Alipay wallet!
+                                    </p>
+                                </li>
+                                <li class="pt-12 pb-12 line-bt">
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <h6>Voucher 20%</h6>
+                                        <span class="fw-5 text-black text-sm-start">9/1/2023</span>
+                                    </div>
+                                    <div class="mt-4 d-flex justify-content-between align-items-center gap-8">
+                                        <p class="text-caption text-black">
+                                            We gives you 20% offcoupon for all bills, applicable for bills paid through Alipay wallet!
+                                        </p>
+                                        <span class="dot flex-shrink-0"></span>
+                                    </div>
+                                </li>
+                                <li class="pt-12 pb-12 line-bt">
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <h6 class="text-secondary">Account Successfully Updated</h6>
+                                        <span class="fw-5 text-sm-start">15 Hour Ago</span>
+                                    </div>
+                                    <p class="text-caption mt-4">
+                                        Your account is successfully updated, you can now experience our new service.
+                                    </p>
+                                </li>
+                                <li class="pt-12 pb-12 line-bt">
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <h6 class="text-secondary">New Offer</h6>
+                                        <span class="fw-5 text-sm-start">1 Day Ago</span>
+                                    </div>
+                                    <p class="text-caption mt-4">
+                                        Flat 20% off on all type of pizza from any restaurant, #valid till 30 Nov, 2022.
+                                    </p>
+                                </li>
+                            </ul>
+                            <ul class="tab-pane fade" id="voucher" role="tabpanel">
+                                <li class="pb-12 line-bt">
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <h6>Order Cancelled !!</h6>
+                                        <span class="fw-5 text-black text-sm-start">5 Min Ago</span>
+                                    </div>
+                                    <div class="mt-4 d-flex justify-content-between align-items-center gap-8">
+                                        <p class="text-caption text-black">
+                                            Your order is cancelled due to some kitchen issues.i hope you understand this and thank you in advance for support us.
+                                        </p>
+                                        <span class="dot  flex-shrink-0"></span>
+                                    </div>
+                                </li>
+                                <li class="pt-12 pb-12 line-bt">
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <h6 class="text-secondary">Voucher 50%</h6>
+                                        <span class="fw-5 text-sm-start">7/1/2023</span>
+                                    </div>
+                                    <p class="text-caption mt-4">
+                                        We gives you 20% offcoupon for all bills, applicable for bills paid through Alipay wallet!
+                                    </p>
+                                </li>
+                                <li class="pt-12 pb-12 line-bt">
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <h6 class="text-secondary">New Service Available!</h6>
+                                        <span class="fw-5 text-sm-start">25 Min Ago</span>
+                                    </div>
+                                    <p class="text-caption mt-4">
+                                        You can make multiple food orders at one tile you can also cancel orders.
+                                    </p>
+                                </li>
+                                <li class="pt-12 pb-12 line-bt">
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <h6>Credit Card Connected</h6>
+                                        <span class="fw-5 text-black text-sm-start">1 Hour  Ago</span>
+                                    </div>
+                                    <div class="mt-4 d-flex justify-content-between align-items-center gap-8">
+                                        <p class="text-caption text-black">
+                                            Your credit card successfully connected with foodfest.
+                                        </p>
+                                        <span class="dot flex-shrink-0"></span>
+                                    </div>
+                                </li>
+                                <li class="pt-12 pb-12 line-bt">
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <h6 class="text-secondary">Voucher Freeship</h6>
+                                        <span class="fw-5 text-sm-start">5/1/2023</span>
+                                    </div>
+                                    <p class="text-caption mt-4">
+                                        We gives you 20% offcoupon for all bills, applicable for bills paid through Alipay wallet!
+                                    </p>
+                                </li>
+                                <li class="pt-12 pb-12 line-bt">
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <h6>Voucher 20%</h6>
+                                        <span class="fw-5 text-black text-sm-start">9/1/2023</span>
+                                    </div>
+                                    <div class="mt-4 d-flex justify-content-between align-items-center gap-8">
+                                        <p class="text-caption text-black">
+                                            We gives you 20% offcoupon for all bills, applicable for bills paid through Alipay wallet!
+                                        </p>
+                                        <span class="dot flex-shrink-0"></span>
+                                    </div>
+                                </li>
+                                <li class="pt-12 pb-12 line-bt">
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <h6 class="text-secondary">Account Successfully Updated</h6>
+                                        <span class="fw-5 text-sm-start">15 Hour Ago</span>
+                                    </div>
+                                    <p class="text-caption mt-4">
+                                        Your account is successfully updated, you can now experience our new service.
+                                    </p>
+                                </li>
+                                <li class="pt-12 pb-12 line-bt">
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <h6 class="text-secondary">New Offer</h6>
+                                        <span class="fw-5 text-sm-start">1 Day Ago</span>
+                                    </div>
+                                    <p class="text-caption mt-4">
+                                        Flat 20% off on all type of pizza from any restaurant, #valid till 30 Nov, 2022.
+                                    </p>
+                                </li>
+                            </ul>
+                            <ul class="tab-pane fade" id="order" role="tabpanel">
+                                <li class="pb-12 line-bt">
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <h6>Order Cancelled !!</h6>
+                                        <span class="fw-5 text-black text-sm-start">5 Min Ago</span>
+                                    </div>
+                                    <div class="mt-4 d-flex justify-content-between align-items-center gap-8">
+                                        <p class="text-caption text-black">
+                                            Your order is cancelled due to some kitchen issues.i hope you understand this and thank you in advance for support us.
+                                        </p>
+                                        <span class="dot  flex-shrink-0"></span>
+                                    </div>
+                                </li>
+                                <li class="pt-12 pb-12 line-bt">
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <h6 class="text-secondary">Voucher 50%</h6>
+                                        <span class="fw-5 text-sm-start">7/1/2023</span>
+                                    </div>
+                                    <p class="text-caption mt-4">
+                                        We gives you 20% offcoupon for all bills, applicable for bills paid through Alipay wallet!
+                                    </p>
+                                </li>
+                                <li class="pt-12 pb-12 line-bt">
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <h6 class="text-secondary">New Service Available!</h6>
+                                        <span class="fw-5 text-sm-start">25 Min Ago</span>
+                                    </div>
+                                    <p class="text-caption mt-4">
+                                        You can make multiple food orders at one tile you can also cancel orders.
+                                    </p>
+                                </li>
+                                <li class="pt-12 pb-12 line-bt">
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <h6>Credit Card Connected</h6>
+                                        <span class="fw-5 text-black text-sm-start">1 Hour  Ago</span>
+                                    </div>
+                                    <div class="mt-4 d-flex justify-content-between align-items-center gap-8">
+                                        <p class="text-caption text-black">
+                                            Your credit card successfully connected with foodfest.
+                                        </p>
+                                        <span class="dot flex-shrink-0"></span>
+                                    </div>
+                                </li>
+                                <li class="pt-12 pb-12 line-bt">
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <h6 class="text-secondary">Voucher Freeship</h6>
+                                        <span class="fw-5 text-sm-start">5/1/2023</span>
+                                    </div>
+                                    <p class="text-caption mt-4">
+                                        We gives you 20% offcoupon for all bills, applicable for bills paid through Alipay wallet!
+                                    </p>
+                                </li>
+                                <li class="pt-12 pb-12 line-bt">
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <h6>Voucher 20%</h6>
+                                        <span class="fw-5 text-black text-sm-start">9/1/2023</span>
+                                    </div>
+                                    <div class="mt-4 d-flex justify-content-between align-items-center gap-8">
+                                        <p class="text-caption text-black">
+                                            We gives you 20% offcoupon for all bills, applicable for bills paid through Alipay wallet!
+                                        </p>
+                                        <span class="dot flex-shrink-0"></span>
+                                    </div>
+                                </li>
+                                <li class="pt-12 pb-12 line-bt">
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <h6 class="text-secondary">Account Successfully Updated</h6>
+                                        <span class="fw-5 text-sm-start">15 Hour Ago</span>
+                                    </div>
+                                    <p class="text-caption mt-4">
+                                        Your account is successfully updated, you can now experience our new service.
+                                    </p>
+                                </li>
+                                <li class="pt-12 pb-12 line-bt">
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <h6 class="text-secondary">New Offer</h6>
+                                        <span class="fw-5 text-sm-start">1 Day Ago</span>
+                                    </div>
+                                    <p class="text-caption mt-4">
+                                        Flat 20% off on all type of pizza from any restaurant, #valid till 30 Nov, 2022.
+                                    </p>
+                                </li>
+                            </ul>
+                            <ul class="tab-pane fade" id="promotion" role="tabpanel">
+                                <li class="pb-12 line-bt">
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <h6>Order Cancelled !!</h6>
+                                        <span class="fw-5 text-black text-sm-start">5 Min Ago</span>
+                                    </div>
+                                    <div class="mt-4 d-flex justify-content-between align-items-center gap-8">
+                                        <p class="text-caption text-black">
+                                            Your order is cancelled due to some kitchen issues.i hope you understand this and thank you in advance for support us.
+                                        </p>
+                                        <span class="dot  flex-shrink-0"></span>
+                                    </div>
+                                </li>
+                                <li class="pt-12 pb-12 line-bt">
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <h6 class="text-secondary">Voucher 50%</h6>
+                                        <span class="fw-5 text-sm-start">7/1/2023</span>
+                                    </div>
+                                    <p class="text-caption mt-4">
+                                        We gives you 20% offcoupon for all bills, applicable for bills paid through Alipay wallet!
+                                    </p>
+                                </li>
+                                <li class="pt-12 pb-12 line-bt">
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <h6 class="text-secondary">New Service Available!</h6>
+                                        <span class="fw-5 text-sm-start">25 Min Ago</span>
+                                    </div>
+                                    <p class="text-caption mt-4">
+                                        You can make multiple food orders at one tile you can also cancel orders.
+                                    </p>
+                                </li>
+                                <li class="pt-12 pb-12 line-bt">
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <h6>Credit Card Connected</h6>
+                                        <span class="fw-5 text-black text-sm-start">1 Hour  Ago</span>
+                                    </div>
+                                    <div class="mt-4 d-flex justify-content-between align-items-center gap-8">
+                                        <p class="text-caption text-black">
+                                            Your credit card successfully connected with foodfest.
+                                        </p>
+                                        <span class="dot flex-shrink-0"></span>
+                                    </div>
+                                </li>
+                                <li class="pt-12 pb-12 line-bt">
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <h6 class="text-secondary">Voucher Freeship</h6>
+                                        <span class="fw-5 text-sm-start">5/1/2023</span>
+                                    </div>
+                                    <p class="text-caption mt-4">
+                                        We gives you 20% offcoupon for all bills, applicable for bills paid through Alipay wallet!
+                                    </p>
+                                </li>
+                                <li class="pt-12 pb-12 line-bt">
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <h6>Voucher 20%</h6>
+                                        <span class="fw-5 text-black text-sm-start">9/1/2023</span>
+                                    </div>
+                                    <div class="mt-4 d-flex justify-content-between align-items-center gap-8">
+                                        <p class="text-caption text-black">
+                                            We gives you 20% offcoupon for all bills, applicable for bills paid through Alipay wallet!
+                                        </p>
+                                        <span class="dot flex-shrink-0"></span>
+                                    </div>
+                                </li>
+                                <li class="pt-12 pb-12 line-bt">
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <h6 class="text-secondary">Account Successfully Updated</h6>
+                                        <span class="fw-5 text-sm-start">15 Hour Ago</span>
+                                    </div>
+                                    <p class="text-caption mt-4">
+                                        Your account is successfully updated, you can now experience our new service.
+                                    </p>
+                                </li>
+                                <li class="pt-12 pb-12 line-bt">
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <h6 class="text-secondary">New Offer</h6>
+                                        <span class="fw-5 text-sm-start">1 Day Ago</span>
+                                    </div>
+                                    <p class="text-caption mt-4">
+                                        Flat 20% off on all type of pizza from any restaurant, #valid till 30 Nov, 2022.
+                                    </p>
+                                </li>
+                            </ul>
+                        </div>
+                        
+        
+                        
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+
+
    
     <script type="text/javascript" src="js/bootstrap.min.js"></script>
     <script type="text/javascript" src="js/jquery.min.js"></script>

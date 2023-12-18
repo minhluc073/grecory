@@ -122,3 +122,28 @@
         }
     }
 }
+.cb-rounded {
+    position: relative;
+    border: 1px solid var(--primary);
+    background: none;
+    cursor: pointer;
+    outline: 0;
+    width: 18px;
+    height: 18px;
+    -webkit-appearance: none;
+    border-radius: 50%;
+    background-color: var(--white);
+
+    &:checked {
+        &::before {
+            content: "";
+            position: absolute;
+            border-radius: 50%;
+            width: 12px;
+            height: 12px;
+            left: 2px;
+            top: 2px;
+            background-color: var(--primary);
+        }
+    }
+}

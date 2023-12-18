@@ -264,6 +264,16 @@
       });
     }
   };
+  /* check item
+  -------------------------------------------------------------------------------- */
+  var checkAllItem = function () {
+    $("#checkCartAll").click(function () {
+      $(":checkbox.checkItem").prop("checked", this.checked);
+    });
+    $(".del-cartAll").click(function () {
+      $(":checkbox.checkItem, :checkbox#checkCartAll").prop("checked", false);
+    });
+  };
 
   /* touch spin
   ----------------------------------------------------------------------------------------- */
@@ -363,6 +373,7 @@
     touchSpin();
     treeView();
     changeValue();
+    checkAllItem();
     preloader();
     // setLocalColor();
     // themeSettingColor();
