@@ -4951,6 +4951,9 @@ html:not([dir=rtl]) .noUi-horizontal .noUi-handle {
   padding-right: 6px;
   border-right: 1px solid var(--line);
 }
+.card-product .content .icon-star2 {
+  color: #F8BD09;
+}
 .card-product .box-sale {
   position: absolute;
   top: 7px;
@@ -4999,7 +5002,7 @@ html:not([dir=rtl]) .noUi-horizontal .noUi-handle {
   display: flex;
   gap: 12px;
 }
-.box-title-product li:first-child {
+.box-title-product li:not(:last-child) {
   padding-right: 12px;
   border-right: 1px solid var(--line);
 }

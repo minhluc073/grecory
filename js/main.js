@@ -104,9 +104,9 @@
   /* delete Item 
   ------------------------------------------------------------------------------------- */
   var delItem = function () {
-    if ($("div").hasClass("wd-list-item")) {
+    if ($("div").hasClass("list-history")) {
       $(".del-item").on("click", function () {
-        this.closest(".wd-list-item").remove();
+        this.closest(".list-history").remove();
       });
     }
   };
