@@ -656,6 +656,10 @@ code {
   margin-top: 14px;
 }
 
+.mt-15 {
+  margin-top: 15px;
+}
+
 .mt-16 {
   margin-top: 16px;
 }
@@ -1012,6 +1016,10 @@ code {
 
 .line-bt {
   border-bottom: 1px solid var(--line) !important;
+}
+
+.line-bt-dashed {
+  border-bottom: 1px dashed var(--line) !important;
 }
 
 .line-bt2 {
@@ -1630,6 +1638,25 @@ code {
   padding-bottom: 8px;
 }
 
+.service-tab {
+  display: flex;
+  gap: 16px;
+  overflow-x: auto;
+  padding-right: 16px;
+  margin-right: -16px;
+}
+.service-tab .nav-item {
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 18px;
+}
+.service-tab .nav-item .nav-link {
+  padding-bottom: 4px;
+}
+.service-tab .nav-item .nav-link.active {
+  border-width: 1px;
+}
+
 /*------------ button ---------------- */
 .tf-btn {
   padding: 12px 40px;
@@ -2120,6 +2147,11 @@ code {
 }
 .cart-product.style2 .badge-icon {
   margin-left: -4px;
+}
+
+.btn-apply {
+  padding: 10px 16px;
+  width: auto;
 }
 
 /*------------ dropdown ---------------- */

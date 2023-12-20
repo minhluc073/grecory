@@ -538,6 +538,9 @@ code {
 .mt-14 {
     margin-top: 14px;
 }
+.mt-15{
+    margin-top: 15px;
+}
 .mt-16 {
     margin-top: 16px;
 }
@@ -815,6 +818,10 @@ code {
 }
 .line-bt {
     border-bottom: 1px solid var(--line) !important;
+}
+.line-bt-dashed {
+    border-bottom: 1px dashed var(--line) !important;
+
 }
 .line-bt2 {
     border-bottom: 1px solid var(--line-rgba) !important;
