@@ -90,13 +90,13 @@
 
 .tf-checkbox {
     position: relative;
-    border: 1px solid var(--line-2);
-    border-radius: 6px;
+    border: 2px solid var(--line);
+    border-radius: 4px;
     background: none;
     cursor: pointer;
     outline: 0;
-    width: 22px;
-    height: 22px;
+    width: 20px;
+    height: 20px;
     -webkit-appearance: none;
     @include flex(center, center);
     &::before {

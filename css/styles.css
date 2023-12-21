@@ -2342,7 +2342,7 @@ code {
 
 /*------------ range slider ---------------- */
 .noUi-horizontal {
-  height: 5px;
+  height: 6px;
 }
 
 .noUi-target {
@@ -2351,7 +2351,7 @@ code {
 
 .noUi-base .noUi-connects {
   border-radius: 999px;
-  background-color: var(--bg-progress);
+  background-color: var(--line);
 }
 
 .noUi-connect {
@@ -2360,12 +2360,13 @@ code {
 
 .noUi-horizontal .noUi-handle,
 .noUi-vertical .noUi-handle {
-  height: 17px;
-  width: 17px;
+  height: 24px;
+  width: 24px;
   border-radius: 50px;
-  border: 4px solid var(--primary);
+  border: 2px solid var(--primary);
   background-color: var(--white);
   box-shadow: unset;
+  top: -10px;
   cursor: pointer;
 }
 .noUi-horizontal .noUi-handle::before, .noUi-horizontal .noUi-handle::after,
@@ -2382,6 +2383,24 @@ code {
 }
 .slider-tooltip-default .noUi-tooltip::after {
   content: "Km";
+}
+
+.box-pricing .noUi-handle-lower::after,
+.box-pricing .noUi-handle-upper::after {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 18px;
+  color: var(--onSurface);
+  font-family: "Inter Tight", sans-serif;
+  top: 100%;
+  left: 0;
+  margin-top: 2px;
+}
+.box-pricing .noUi-handle-lower::after {
+  content: "Min";
+}
+.box-pricing .noUi-handle-upper::after {
+  content: "Max";
 }
 
 html:not([dir=rtl]) .noUi-horizontal .noUi-handle {
@@ -3288,13 +3307,13 @@ html:not([dir=rtl]) .noUi-horizontal .noUi-handle {
 
 .tf-checkbox {
   position: relative;
-  border: 1px solid var(--line-2);
-  border-radius: 6px;
+  border: 2px solid var(--line);
+  border-radius: 4px;
   background: none;
   cursor: pointer;
   outline: 0;
-  width: 22px;
-  height: 22px;
+  width: 20px;
+  height: 20px;
   -webkit-appearance: none;
   display: flex;
   align-items: center;
@@ -3787,6 +3806,8 @@ html:not([dir=rtl]) .noUi-horizontal .noUi-handle {
   background: var(--white);
   pointer-events: auto;
   width: 100%;
+  height: 80vh;
+  overflow: auto;
 }
 .modal-filter .top {
   padding: 16px;
@@ -3798,6 +3819,21 @@ html:not([dir=rtl]) .noUi-horizontal .noUi-handle {
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+.modal-filter .top .inner .icon-close1 {
+  font-size: 18px;
+  color: var(--secondary);
+  font-weight: 600;
+}
+.modal-filter .content {
+  padding-bottom: 96px;
+}
+.modal-filter .content .form-control {
+  padding: 8px;
+  width: 65px;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 18px;
 }
 
 /*------------ timeline ---------------- */

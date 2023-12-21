@@ -1,5 +1,5 @@
 .noUi-horizontal {
-    height: 5px;
+    height: 6px;
 }
 .noUi-target {
     border: 0;
@@ -8,7 +8,7 @@
 .noUi-base {
     .noUi-connects {
         border-radius: 999px;
-        background-color: var(--bg-progress);
+        background-color: var(--line);
     }
 }
 .noUi-connect {
@@ -17,12 +17,13 @@
 
 .noUi-horizontal .noUi-handle,
 .noUi-vertical .noUi-handle {
-    height: 17px;
-    width: 17px;
+    height: 24px;
+    width: 24px;
     border-radius: 50px;
-    border: 4px solid var(--primary);
+    border: 2px solid var(--primary);
     background-color: var(--white);
     box-shadow: unset;
+    top: -10px;
     cursor: pointer;
     &::before,
     &::after {
@@ -40,9 +41,33 @@
         }
     }
 }
+.box-pricing {
+    .noUi-handle-lower,
+    .noUi-handle-upper {
+        &::after {
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 18px;
+            color: var(--onSurface);
+            font-family: $font-main-family;
+            top: 100%;
+            left: 0;
+            margin-top: 2px;
+        }
+    }
+    .noUi-handle-lower {
+        &::after {
+            content: "Min";
+        }
+    }
+    .noUi-handle-upper {
+        &::after {
+            content: "Max";
+        }
+    }
+}
 
 html:not([dir="rtl"]) .noUi-horizontal .noUi-handle {
     right: -8px;
 }
-
 

@@ -202,64 +202,42 @@
     }
   };
 
-  var rangeDistance = function () {
-    if ($("#slider-distance").length > 0) {
-      var distanceSlider = document.getElementById("slider-distance");
-      
-      noUiSlider.create(distanceSlider, {
-        start: 5,
-        behaviour: "snap",
-        connect: [true, false],
-        range: {
-          min: 0,
-          max: 10,
-        },
-        format: {
-          from: function (value) {
-            return parseInt(value);
-          },
-          to: function (value) {
-            return parseInt(value);
-          },
-        },
-      });
+  
 
-      var distanceField = document.getElementById("distance-val");
-      distanceSlider.noUiSlider.on("update", function (values, handle) {
-        distanceField.innerHTML = values[handle] + "km";
-      });
-    }
-  };
-
-  var rangePrice = function () {
-    if ($("#slider-distance").length > 0) {
-      var priceSlider = document.getElementById("slider-price");
-      
-      noUiSlider.create(priceSlider, {
-        start: 250,
-        behaviour: "snap",
-        connect: [true, false],
-        range: {
-          min: 0,
-          max: 500,
-        },
-        format: {
-          from: function (value) {
-            return parseInt(value);
-          },
-          to: function (value) {
-            return parseInt(value);
-          },
-        },
-      });
-
-      var priceField = document.getElementById("price-val");
-      priceSlider.noUiSlider.on("update", function (values, handle) {
-        priceField.innerHTML = "$" + values[handle];
-      });
-    }
-  };
+  
  
+  var rangePrice = function () {
+    if ($("#price-val").length > 0) {
+      var skipSlider = document.getElementById("price-val");
+      var skipValues = [
+        document.getElementById("price-val-lower"),
+        document.getElementById("price-val-upper"),
+      ];
+
+      noUiSlider.create(skipSlider, {
+        start: [12000, 15000],
+        connect: true,
+        tooltips: [false, false],
+        step: 1,
+        range: {
+          min: 10000,
+          max: 17000,
+        },
+        format: {
+          from: function (value) {
+            return parseInt(value);
+          },
+          to: function (value) {
+            return parseInt(value);
+          },
+        },
+      });
+
+      skipSlider.noUiSlider.on("update", function (val, e) {
+        skipValues[e].value = val[e] + "$";
+      });
+    }
+  };
 
   $(function () {
     rangeSliderOne();
@@ -270,7 +248,6 @@
     rangeSoftLimit();
     rangePips();
     rangeDirection();
-    rangeDistance();
     rangePrice();
   });
 })(jQuery);

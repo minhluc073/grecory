@@ -339,65 +339,118 @@
                 <div class="content py-16">
                     <div class="tf-container">
                         <h6>Categories</h6>
-                        <ul class="grid-2">
-                            <li> 1
+                        <ul class="grid-2 gap-12 mt-16">
+                            <li> 
+                                <div class="d-flex gap-8 align-items-center">
+                                    <input type="checkbox" class="tf-checkbox checkItem" id="cb1" checked>
+                                    <label for="cb1" class="text-black">All</label>
+                                </div>
                             </li>
                             <li>
-                                2
+                                <div class="d-flex gap-8 align-items-center">
+                                    <input type="checkbox" class="tf-checkbox checkItem" id="cb2">
+                                    <label for="cb2" class="text-black">Fasion</label>
+                                </div>
                             </li>
                             <li>
-                                
+                                <div class="d-flex gap-8 align-items-center">
+                                    <input type="checkbox" class="tf-checkbox checkItem" id="cb3">
+                                    <label for="cb3" class="text-black">Drinks ( 214 )</label>
+                                </div>
                             </li>
                             <li>
-                                
+                                <div class="d-flex gap-8 align-items-center">
+                                    <input type="checkbox" class="tf-checkbox checkItem" id="cb4">
+                                    <label for="cb4" class="text-black">Mom & Baby</label>
+                                </div> 
+                            </li>
+                            <li>
+                                <div class="d-flex gap-8 align-items-center">
+                                    <input type="checkbox" class="tf-checkbox checkItem" id="cb5">
+                                    <label for="cb5" class="text-black">Foods ( 100 )</label>
+                                </div> 
+                            </li>
+                            <li>
+                                <div class="d-flex gap-8 align-items-center">
+                                    <input type="checkbox" class="tf-checkbox checkItem" id="cb6">
+                                    <label for="cb6" class="text-black">Health</label>
+                                </div> 
+                            </li>
+                            <li>
+                                <div class="d-flex gap-8 align-items-center">
+                                    <input type="checkbox" class="tf-checkbox checkItem" id="cb7">
+                                    <label for="cb7" class="text-black">Appliances ( 34)</label>
+                                </div> 
+                            </li>
+                            <li>
+                                <div class="d-flex gap-8 align-items-center">
+                                    <input type="checkbox" class="tf-checkbox checkItem" id="cb8">
+                                    <label for="cb8" class="text-black">Cosmetics</label>
+                                </div> 
+                            </li>
+                            <li>
+                                <div class="d-flex gap-8 align-items-center">
+                                    <input type="checkbox" class="tf-checkbox checkItem" id="cb9">
+                                    <label for="cb9" class="text-black">Accessories ( 50 )</label>
+                                </div> 
                             </li>
                         </ul>
-                        <div class="mt-16 grid-2 gap-16">
-                            <select class="form-select">
-                              <option>City</option>
-                              <option>New York</option>
-                              <option>Tokyo</option>
-                              <option>Los Angeles</option>
-                            </select>
-                            <select class="form-select">
-                              <option>District</option>
-                              <option>Hawaii</option>
-                              <option>Texas</option>
-                              <option>Iowa</option>
-                          </select>
+                        <div class="mt-16 d-flex justify-content-between align-items-center">
+                            <h6>Pricing:</h6>
+                            <div class="d-flex gap-8 align-items-center">
+                                <input type="text" id="price-val-lower" class="form-control">
+                                <span>To</span>
+                                <input type="text" id="price-val-upper" class="form-control">
+                            </div>
                         </div>
-                        <h4 class="mt-24 fw-bold">Maximum distance</h4>
-                        <div class="mt-24">
-                          <div id="slider-distance"></div>
-                          <div class="mt-12 d-flex justify-content-between">
-                            <span id="distance-val"></span>
-                            <span>10km</span>
-                          </div>
+                        <div class="box-pricing mt-24">
+                            <div id="price-val"></div>
                         </div>
-                        <h4 class="mt-24 fw-bold">Price</h4>
-                        <div class="mt-24">
-                          <div id="slider-price"></div>
-                          <div class="mt-12 d-flex justify-content-between">
-                            <span id="price-val"></span>
-                            <span>$500</span>
-                          </div>
+                        <div class="mt-40">
+                            <h6>Product Status</h6>
+                            <ul class="grid-2 gap-12 mt-16">
+                                <li> 
+                                    <div class="d-flex gap-8 align-items-center">
+                                        <input type="checkbox" class="tf-checkbox checkItem" id="cbstatus1" checked>
+                                        <label for="cbstatus1" class="text-black">In Stock</label>
+                                    </div>
+                                </li>
+                                <li> 
+                                    <div class="d-flex gap-8 align-items-center">
+                                        <input type="checkbox" class="tf-checkbox checkItem" id="cbstatus2">
+                                        <label for="cbstatus2" class="text-black">On Sale</label>
+                                    </div>
+                                </li>
+                            </ul>
                         </div>
-                        <h4 class="mt-24 fw-bold">Time</h4>
-                        <ul class="mt-16 pb-16 grid-2 gap-10">
-                          <li>
-                              <a href="javascript:void(0);" class="categories-item active-suggest2">Any</a>
-                          </li>
-                          <li>
-                              <a href="javascript:void(0);" class="categories-item active-suggest2">Open now</a>
-                          </li>
-                        </ul>
-                       
+                        <div class="mt-16">
+                            <h6>Rating Stars</h6>
+                            <ul class="grid-2 gap-12 mt-16">
+                                <li> 
+                                    <div class="d-flex gap-8 align-items-center">
+                                        <input type="checkbox" class="tf-checkbox checkItem" id="cbstar" checked>
+                                        <label for="cbstar" class="text-black">5 Star</label>
+                                    </div>
+                                </li>
+                                <li> 
+                                    <div class="d-flex gap-8 align-items-center">
+                                        <input type="checkbox" class="tf-checkbox checkItem" id="cbstar2">
+                                        <label for="cbstar2" class="text-black">4 Star</label>
+                                    </div>
+                                </li>
+                                <li> 
+                                    <div class="d-flex gap-8 align-items-center">
+                                        <input type="checkbox" class="tf-checkbox checkItem" id="cbstar3">
+                                        <label for="cbstar3" class="text-black">3 Star</label>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
-                <div class="menubar-footer footer-fixed">
-                    <div class="mw-wrapper">
-                        <a href="near-me.html" class="tf-btn primary btn-lg">Apply</a>
-                    </div>
+                <div class="footer-fixed p-16 line-top d-flex gap-8">
+                    <a href="#" class="tf-btn surface del-cartAll">Reset</a>
+                    <a href="#" class="tf-btn primary">Check Out</a>
                 </div>
             </div>
         </div>
