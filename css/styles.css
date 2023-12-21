@@ -3783,6 +3783,23 @@ html:not([dir=rtl]) .noUi-horizontal .noUi-handle {
   margin-top: 10px;
 }
 
+.modal-filter {
+  background: var(--white);
+  pointer-events: auto;
+  width: 100%;
+}
+.modal-filter .top {
+  padding: 16px;
+  border-bottom: 1px solid var(--line);
+}
+.modal-filter .top .inner {
+  max-width: 1024px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
 /*------------ timeline ---------------- */
 .tf-timeline {
   position: relative;

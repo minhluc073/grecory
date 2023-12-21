@@ -243,8 +243,25 @@
             padding: 18px 16px;
             justify-content: center;
         }
-        &:last-child{
+        &:last-child {
             margin-top: 10px;
+        }
+    }
+}
+
+.modal-filter {
+    background: var(--white);
+    pointer-events: auto;
+    width: 100%;
+    .top {
+        padding: 16px;
+        border-bottom: 1px solid var(--line);
+        .inner {
+            max-width: 1024px;
+            margin: auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
         }
     }
 }
