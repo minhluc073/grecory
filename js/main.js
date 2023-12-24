@@ -282,6 +282,27 @@
       $(".stepper").TouchSpin();
     }
   };
+
+  /* show notification
+  ------------------------------------------------------------------------------------- */
+  var showNoti = function () {
+    if ($("#modalNoti").length > 0) {
+      let showPopup = sessionStorage.getItem("showPopup");
+      if (!JSON.parse(showPopup)) {
+        setTimeout(function () {
+          $("#modalNoti").modal("show");
+        }, 1000);
+      }
+    }
+  };
+
+  /* hide popup 
+  ------------------------------------------------------------------------------------- */
+  const hidePopupNoti = function () {
+    $(".btn-hide-modal").on("click", function () {
+      sessionStorage.setItem("showPopup", true);
+    });
+  };
   /* preloader 
   ------------------------------------------------------------------------------------- */
   var preloader = function () {
@@ -374,6 +395,8 @@
     treeView();
     changeValue();
     checkAllItem();
+    showNoti();
+    hidePopupNoti();
     preloader();
     // setLocalColor();
     // themeSettingColor();

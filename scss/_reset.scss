@@ -464,7 +464,7 @@ code {
 //     line-height: 19.6px;
 // }
 // text-size
-.text-lg{
+.text-lg {
     font-size: 18px;
     line-height: 22px;
 }
@@ -538,7 +538,7 @@ code {
 .mt-14 {
     margin-top: 14px;
 }
-.mt-15{
+.mt-15 {
     margin-top: 15px;
 }
 .mt-16 {
@@ -601,7 +601,7 @@ code {
 .mb-20 {
     margin-bottom: 20px;
 }
-.mr--16{
+.mr--16 {
     margin-right: -16px;
 }
 .mr--20 {
@@ -609,6 +609,10 @@ code {
 }
 .mb--50 {
     margin-bottom: -50px;
+}
+.m--16{
+    margin-left: -16px;
+    margin-right: -16px;
 }
 
 // padding
@@ -711,11 +715,18 @@ code {
     padding-top: 12px;
     padding-bottom: 12px;
 }
+.px-16{
+    padding-left: 16px;
+    padding-right: 16px;
+}
 .p-18 {
     padding: 18px;
 }
 .p-20 {
     padding: 20px;
+}
+.p-0 {
+    padding: 0;
 }
 .bg-primary {
     background-color: var(--primary) !important;
@@ -821,7 +832,6 @@ code {
 }
 .line-bt-dashed {
     border-bottom: 1px dashed var(--line) !important;
-
 }
 .line-bt2 {
     border-bottom: 1px solid var(--line-rgba) !important;

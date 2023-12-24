@@ -964,6 +964,50 @@
         </div>
     </div>
 
+    <!-- noti popup -->
+    <div class="modal fade modalCenter" id="modalNoti">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+           <div class="modal-content">
+              <div class="p-16 line-bt text-center">
+                  <h5>“Grecory” Would Like To 
+                    Send You Notifications</h5>
+                  <p class="mt-8 text-large">Notifications may include alerts, sounds, and icon badges. These can be configured in Settings.</p>
+              </div>
+              <div class="grid-2">
+                 <a href="#" class="line-r text-center text-button fw-6 p-10 text-secondary btn-hide-modal" data-bs-dismiss="modal" >Don’t Allow</a>
+                 <a href="#" class="text-center text-button fw-6 p-10 text-primary btn-hide-modal"  data-bs-toggle="modal" data-bs-target="#notiPrivacy"> Allow</a> 
+              </a>
+              </div>
+           </div>
+        </div>
+    </div>
+
+    <!-- noti popup 2-->
+    <div class="modal fade modalCenter" id="notiPrivacy">
+       <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content p-20">
+             <div class="heading">
+              <h5>Privacy</h5>
+              <div class="mt-4">
+                  <p>A mobile app privacy policy is a legal statement that must be clear, conspicuous, and consented to by all users. It must disclose how a mobile app gathers, stores, and uses the personally identifiable information it collects from its users.</p>
+                  <p>A mobile privacy app is developed and presented to users so that mobile app developers stay compliant with state, federal, and international laws. As a result, they fulfill the legal requirement to safeguard user privacy while protecting the company itself from legal challenges.</p>
+              </div>
+              <h5 class="mt-20">Authorized Users</h5>
+              <p class="mt-4">
+                  A mobile app privacy policy is a legal statement that must be clear, conspicuous, and consented to by all users. It must disclose how a mobile app gathers, stores, and uses the personally identifiable information it collects from its users.
+              </p>
+              <div class="d-flex gap-8 align-items-center mt-20">
+                <input type="checkbox" class="tf-checkbox sm" id="cb-ip"> 
+                <label for="cb-ip">I agree to the Term of sevice and Privacy policy</label>
+              </div>
+           
+             </div>
+             <div class="mt-20">
+                <a href="#" class="tf-btn md primary" data-bs-dismiss="modal">I Accept</a>
+             </div>
+          </div>
+       </div>
+    </div>
 
    
     <script type="text/javascript" src="js/bootstrap.min.js"></script>

@@ -82,11 +82,45 @@
         font-size: 14px;
         font-weight: 600;
         line-height: 18px;
-        .nav-link{
+        .nav-link {
             padding-bottom: 4px;
-            &.active{
+            &.active {
                 border-width: 1px;
             }
         }
+    }
+}
+
+.tf-categories {
+    .nav-pills {
+        .nav-link {
+            img {
+                width: 40px;
+                height: 40px;
+            }
+            color: var(--secondary);
+            font-size: 14px;
+            font-weight: 600;
+            line-height: 18px;
+            background-color: var(--surface);
+            border-bottom: 1px solid var(--line);
+            border-radius: 0;
+            padding: 12px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            white-space: nowrap;
+            gap: 8px;
+            &.active {
+                background-color: var(--white);
+                color: var(--onSurface);
+            }
+        }
+    }
+    .tab-content {
+        width: 100%;
+        position: sticky;
+        top: 48px;
+        padding: 16px;
     }
 }
