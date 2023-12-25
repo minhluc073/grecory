@@ -57,7 +57,7 @@
   --white: #fff;
   --primary: #e55223;
   --primary-bold: #5b2400;
-  --primary-btn: #c96a28;
+  --primary-btn: #e55223;
   --secondary: #787982;
   --secondary2: #b9bac3;
   --success: #1e7f11;
@@ -2455,6 +2455,11 @@ html:not([dir=rtl]) .noUi-horizontal .noUi-handle {
 .form-control {
   border-color: transparent;
 }
+.form-control:focus {
+  box-shadow: unset;
+  border-color: var(--onSurface) !important;
+  background-color: var(--white);
+}
 .form-control::placeholder {
   color: var(--secondary2);
 }
@@ -3678,8 +3683,7 @@ html:not([dir=rtl]) .noUi-horizontal .noUi-handle {
   margin: 0;
 }
 .modal.small .modal-dialog {
-  max-width: 260px;
-  margin: 20px auto;
+  margin: 20px;
 }
 .modal.action-sheet {
   z-index: 5000;

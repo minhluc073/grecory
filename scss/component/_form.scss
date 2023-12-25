@@ -1,12 +1,11 @@
 // input
 .form-control {
     border-color: transparent;
-    // &:focus {
-    //     color: var(--onSurface);
-    //     box-shadow: unset;
-    //     border-color: var(--primary-btn) !important;
-    //     background-color: var(--white);
-    // }
+    &:focus {
+        box-shadow: unset;
+        border-color: var(--onSurface) !important;
+        background-color: var(--white);
+    }
     &::placeholder {
         color: var(--secondary2);
     }
