@@ -771,75 +771,12 @@
     }
 }
 
-.map {
-    width: 100%;
-    min-height: 300px;
-    .marker {
-        background-image: url("../images/logo/location.png");
-        background-size: cover;
-        width: 33px;
-        height: 39px;
-        cursor: pointer;
-    }
-    .mapboxgl-ctrl-bottom-left,
-    .mapboxgl-ctrl-bottom-right {
-        display: none;
-    }
-    .mapboxgl-popup-content {
-        display: flex;
-        align-items: center;
-        gap: 4px;
-        padding: 8px;
-        border-radius: 10px;
-        background-color: var(--white);
-        .img-cf {
-            width: 40px;
-            height: 40px;
-            border-radius: 10px;
-        }
-
-        .mapboxgl-popup-close-button {
-            position: unset;
-            width: auto;
-            font-size: 20px;
-            padding: 0;
-            margin-top: -20px;
-            margin-left: 4px;
-            font-weight: 300;
-        }
-
-        span {
-            display: flex;
-            align-items: center;
-            gap: 2px;
-            font-weight: 600;
-            i {
-                color: #ffc700;
-            }
-        }
-    }
-    .mapboxgl-popup-tip {
-        border-width: 5px;
-    }
-    .mapboxgl-popup {
-        top: 10px;
-        z-index: 50;
-    }
-}
-
-#map-direction {
-    .mapboxgl-control-container {
-        display: none;
-    }
-}
-.map-absolute {
-    position: absolute;
-    top: 60px;
-}
-.inner-map {
-    .map {
-        min-height: 225px;
-        border-radius: 20px;
+.map{
+    margin-left: -16px;
+    margin-right: -16px;
+    iframe{
+         border-top-right-radius: 12px;
+         border-bottom-left-radius: 12px;
     }
 }
 

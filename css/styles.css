@@ -826,7 +826,7 @@ code {
 }
 
 .pb-16 {
-  padding-bottom: 16px;
+  padding-bottom: 16px !important;
 }
 
 .pb-20 {
@@ -3139,6 +3139,13 @@ html:not([dir=rtl]) .noUi-horizontal .noUi-handle {
   width: 40px;
   min-width: 40px;
   height: 40px;
+  border-radius: 50%;
+}
+
+.avt-52 {
+  width: 52px;
+  min-width: 52px;
+  height: 52px;
   border-radius: 50%;
 }
 
@@ -5556,71 +5563,12 @@ html:not([dir=rtl]) .noUi-horizontal .noUi-handle {
 }
 
 .map {
-  width: 100%;
-  min-height: 300px;
+  margin-left: -16px;
+  margin-right: -16px;
 }
-.map .marker {
-  background-image: url("../images/logo/location.png");
-  background-size: cover;
-  width: 33px;
-  height: 39px;
-  cursor: pointer;
-}
-.map .mapboxgl-ctrl-bottom-left,
-.map .mapboxgl-ctrl-bottom-right {
-  display: none;
-}
-.map .mapboxgl-popup-content {
-  display: flex;
-  align-items: center;
-  gap: 4px;
-  padding: 8px;
-  border-radius: 10px;
-  background-color: var(--white);
-}
-.map .mapboxgl-popup-content .img-cf {
-  width: 40px;
-  height: 40px;
-  border-radius: 10px;
-}
-.map .mapboxgl-popup-content .mapboxgl-popup-close-button {
-  position: unset;
-  width: auto;
-  font-size: 20px;
-  padding: 0;
-  margin-top: -20px;
-  margin-left: 4px;
-  font-weight: 300;
-}
-.map .mapboxgl-popup-content span {
-  display: flex;
-  align-items: center;
-  gap: 2px;
-  font-weight: 600;
-}
-.map .mapboxgl-popup-content span i {
-  color: #ffc700;
-}
-.map .mapboxgl-popup-tip {
-  border-width: 5px;
-}
-.map .mapboxgl-popup {
-  top: 10px;
-  z-index: 50;
-}
-
-#map-direction .mapboxgl-control-container {
-  display: none;
-}
-
-.map-absolute {
-  position: absolute;
-  top: 60px;
-}
-
-.inner-map .map {
-  min-height: 225px;
-  border-radius: 20px;
+.map iframe {
+  border-top-right-radius: 12px;
+  border-bottom-left-radius: 12px;
 }
 
 /* animation */
