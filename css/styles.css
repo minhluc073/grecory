@@ -1173,6 +1173,10 @@ code {
   padding-bottom: 80px;
 }
 
+.overflow-auto {
+  overflow: auto;
+}
+
 /*------------ Settings ----------------- */
 /*------------ theme color ---------------- */
 [data-theme-color=theme-primary] {
@@ -1365,7 +1369,7 @@ code {
   width: 290px;
 }
 .modal-sidebar .sidebar-header {
-  background-color: var(--primary-bold);
+  background-color: var(--primary);
   padding: 18px 20px 20px 20px;
   display: flex;
   gap: 16px;
@@ -1638,6 +1642,9 @@ code {
   display: flex;
   justify-content: space-between;
   border-bottom: 1px solid var(--line);
+}
+.product-tabs.style2 {
+  border-bottom: 0;
 }
 
 .tab-3-item {
@@ -5575,6 +5582,38 @@ html:not([dir=rtl]) .noUi-horizontal .noUi-handle {
   border-bottom-left-radius: 12px;
 }
 
+.box-order-fix {
+  height: 70vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.fixed-cart {
+  position: fixed;
+  right: 16px;
+  bottom: 80px;
+  z-index: 100;
+}
+
+.cart-icon {
+  border-radius: 50px;
+  background: rgba(21, 21, 21, 0.4);
+  backdrop-filter: blur(8px);
+  width: 56px;
+  height: 56px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.cart-icon .badge {
+  width: 24px;
+  height: 24px;
+  font-size: 14px;
+  line-height: 18px;
+}
+
 /* animation */
 .ani1 {
   -webkit-animation: ani1 10s infinite ease-in-out alternate;
@@ -5829,7 +5868,7 @@ html:not([dir=rtl]) .noUi-horizontal .noUi-handle {
 }
 
 .boarding-section {
-  padding-top: 80px;
+  padding-top: 60px;
   background-color: #fa7a72;
 }
 .boarding-section .img-box {
@@ -5848,7 +5887,7 @@ html:not([dir=rtl]) .noUi-horizontal .noUi-handle {
   background-color: var(--white);
 }
 .boarding-content h2 {
-  padding: 0 50px;
+  padding: 0 30px;
 }
 .boarding-content p {
   padding: 0 50px;
@@ -6236,7 +6275,7 @@ html:not([dir=rtl]) .noUi-horizontal .noUi-handle {
   margin-bottom: -60px;
 }
 
-span.countdown__value {
+.countdown span.countdown__value {
   background-color: var(--primary);
   color: var(--white);
   font-size: 10px;
