@@ -761,6 +761,10 @@ code {
   padding: 10px;
 }
 
+.p-12 {
+  padding: 12px;
+}
+
 .p-16 {
   padding: 16px;
 }
@@ -1136,6 +1140,10 @@ code {
 
 .rolate-90 {
   transform: rotate(90deg);
+}
+
+.radius-8 {
+  border-radius: 8px;
 }
 
 .radius-12 {
@@ -5077,6 +5085,10 @@ html:not([dir=rtl]) .noUi-horizontal .noUi-handle {
   text-align: end;
   padding-right: 20px;
 }
+.progress-tracking.done .progress-bar {
+  text-align: center;
+  padding: 0;
+}
 
 .cart-store {
   display: flex;
@@ -5212,9 +5224,9 @@ html:not([dir=rtl]) .noUi-horizontal .noUi-handle {
 }
 
 .box-card-bank {
-  width: 77px;
-  height: 77px;
-  padding: 12px 0px;
+  width: 90px;
+  height: 80px;
+  padding: 12px 5px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -5294,6 +5306,16 @@ html:not([dir=rtl]) .noUi-horizontal .noUi-handle {
 }
 .ip-address[type=text]::placeholder {
   color: #b9bac3;
+}
+
+.group-ip-address {
+  position: relative;
+}
+.group-ip-address .icon {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  font-size: 24px;
 }
 
 .textarea-address {
@@ -6659,7 +6681,7 @@ html:not([dir=rtl]) .noUi-horizontal .noUi-handle {
   width: 12px;
   height: 12px;
   background: var(--primary);
-  font-size: 5px;
+  font-size: 6px;
   display: inline-flex;
   justify-content: center;
   align-items: center;
