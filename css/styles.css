@@ -1710,7 +1710,7 @@ code {
 
 /*------------ button ---------------- */
 .tf-btn {
-  padding: 12px 40px;
+  padding: 12px;
   border-radius: 8px;
   display: flex;
   align-items: center;
@@ -3826,6 +3826,23 @@ html:not([dir=rtl]) .noUi-horizontal .noUi-handle {
   font-style: normal;
   line-height: normal;
 }
+.modal .cart-footer {
+  background-color: var(--white);
+  pointer-events: auto;
+}
+.modal .cart-footer .top {
+  padding: 0 16px 16px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid var(--line);
+  margin: 0 -16px;
+}
+.modal .cart-footer .top .icon-close1 {
+  font-size: 18px;
+  color: var(--secondary);
+  font-weight: 600;
+}
 
 .modal-backdrop {
   background-color: var(--backdrop);
@@ -5117,6 +5134,7 @@ html:not([dir=rtl]) .noUi-horizontal .noUi-handle {
   border-radius: 10px;
   border: 1px solid var(--line);
   position: relative;
+  overflow: hidden;
 }
 .card-product .box-img {
   background-color: var(--surface);
@@ -5152,6 +5170,10 @@ html:not([dir=rtl]) .noUi-horizontal .noUi-handle {
   color: var(--white);
   padding: 0px 4px;
   background-color: #e74141;
+}
+.card-product .default-press {
+  background: rgba(255, 255, 255, 0.5);
+  backdrop-filter: blur(2px);
 }
 
 .default-press {

@@ -294,6 +294,7 @@
     border-radius: 10px;
     border: 1px solid var(--line);
     position: relative;
+    overflow: hidden;
     .box-img {
         background-color: var(--surface);
     }
@@ -332,6 +333,10 @@
             padding: 0px 4px;
             background-color: #e74141;
         }
+    }
+    .default-press {
+        background: rgba(255, 255, 255, 0.5);
+        backdrop-filter: blur(2px);
     }
 }
 .default-press {
