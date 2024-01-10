@@ -107,6 +107,14 @@
   --liner-primary: linear-gradient(270deg, #e17e3e 0%, #873b0a 100%);
   --linner-1: linear-gradient(180deg, rgba(135, 59, 10, 0) 47.91%, #2e1200 100%);
   --onSurface: #151515;
+  --primary-hover: #d54313;
+  --success-hover: #19770c;
+  --danger-hover: #b30808;
+  --warning-hover: #e37d05;
+  --info-hover: #91045a;
+  --light-hover:#d0caca;
+  --dark-hover:#15294f;
+  --disable-hover:#c4a896;
 }
 
 /*---------- Reset css styles ----------- */
@@ -1269,11 +1277,11 @@ code {
 }
 
 .modal-sidebar {
-  width: 290px;
+  width: 300px;
 }
 .modal-sidebar .sidebar-header {
   background-color: var(--primary);
-  padding: 18px 20px 20px 20px;
+  padding: 15px;
   display: flex;
   gap: 16px;
   align-items: center;
@@ -1288,7 +1296,7 @@ code {
   color: #fff;
 }
 .modal-sidebar .sidebar-content {
-  padding: 30px 20px;
+  padding: 30px 15px;
   height: 100vh;
   overflow-x: hidden;
   background: var(--white);
@@ -1315,6 +1323,10 @@ code {
   line-height: 0;
 }
 
+.modal-second {
+  width: 280px;
+}
+
 .nav-link-item {
   display: flex;
   align-items: center;
@@ -1334,12 +1346,15 @@ code {
 }
 .nav-link-item span {
   font-size: 16px;
-  font-weight: 700;
+  font-weight: 600;
   line-height: 22.4px;
 }
 .nav-link-item .icon {
   font-size: 20px;
   color: var(--text-4);
+}
+.nav-link-item.not-link::after {
+  display: none;
 }
 
 .sub-menu li {
@@ -1364,17 +1379,15 @@ code {
 .header {
   display: flex;
   justify-content: center;
-  padding: 8px 20px 12px;
+  padding: 8px 15px 12px;
   position: relative;
   min-height: 48px;
 }
 .header .icon {
   height: 24px;
   width: 24px;
-  font-size: 20px;
   display: flex;
   align-items: center;
-  justify-content: center;
 }
 .header .left {
   position: absolute;
@@ -1382,8 +1395,9 @@ code {
   top: 8px;
 }
 .header .left .icon {
-  font-size: 14px;
+  font-size: 18px;
   color: var(--onSurface);
+  font-weight: 500;
 }
 .header .right {
   position: absolute;
@@ -1641,8 +1655,7 @@ code {
   color: #fff;
 }
 .tf-btn.primary:hover {
-  color: var(--primary);
-  background: var(--white);
+  background: var(--primary-hover);
 }
 .tf-btn.surface {
   background: var(--surface);
@@ -1664,8 +1677,7 @@ code {
   color: #fff;
 }
 .tf-btn.success:hover {
-  color: var(--success);
-  background: var(--white);
+  background: var(--success-hover);
 }
 .tf-btn.danger {
   background: var(--danger);
@@ -1673,8 +1685,7 @@ code {
   color: #fff;
 }
 .tf-btn.danger:hover {
-  color: var(--danger);
-  background: var(--white);
+  background: var(--danger-hover);
 }
 .tf-btn.warning {
   background: var(--warning);
@@ -1682,8 +1693,7 @@ code {
   color: #fff;
 }
 .tf-btn.warning:hover {
-  color: var(--warning);
-  background: var(--white);
+  background: var(--warning-hover);
 }
 .tf-btn.info {
   background: var(--info);
@@ -1691,8 +1701,7 @@ code {
   color: #fff;
 }
 .tf-btn.info:hover {
-  color: var(--info);
-  background: var(--white);
+  background: var(--info-hover);
 }
 .tf-btn.light {
   background: var(--light);
@@ -1700,8 +1709,7 @@ code {
   color: #151515;
 }
 .tf-btn.light:hover {
-  color: var(--light);
-  background: #151515;
+  background: var(--light-hover);
 }
 .tf-btn.dark {
   background: var(--dark);
@@ -1709,8 +1717,7 @@ code {
   color: #fff;
 }
 .tf-btn.dark:hover {
-  color: var(--dark);
-  background: var(--white);
+  background: var(--dark-hover);
 }
 .tf-btn.disable {
   background: var(--disable);
@@ -1718,8 +1725,7 @@ code {
   color: #fff;
 }
 .tf-btn.disable:hover {
-  color: var(--disable);
-  background: var(--white);
+  background: var(--disable-hover);
 }
 .tf-btn.light-btn-primary {
   background: var(--rgba-primary);

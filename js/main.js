@@ -305,6 +305,7 @@
       sessionStorage.setItem("showPopup", true);
     });
   };
+
   /* preloader 
   ------------------------------------------------------------------------------------- */
   var preloader = function () {
@@ -313,6 +314,17 @@
         $(this).remove();
       });
     }, 500);
+  };
+
+    /* modal click handler
+  ------------------------------------------------------------------------------------- */
+  var clickModalSecond = function () {
+    $(".btn-choose-page").click(function () {
+      $("#modalPage").modal("show");
+    });
+    $(".btn-choose-component").click(function () {
+      $("#modalComponent").modal("show");
+    });
   };
 
 
@@ -348,6 +360,7 @@
     checkAllItem();
     showNoti();
     hidePopupNoti();
+    clickModalSecond();
     preloader();
   
   });
