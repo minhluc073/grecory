@@ -313,7 +313,7 @@
       $(".preload").fadeOut("slow", function () {
         $(this).remove();
       });
-    }, 500);
+    }, 200);
   };
 
     /* modal click handler
